@@ -3,15 +3,20 @@ import aboutImage from '../assets/about.jpg'
 import { ABOUT_TEXT } from '../constants'
 import { motion } from 'framer-motion'
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 
 export default function About() {
   return (
     <div className="border-b border-neutral-700 pb-4">
-        <h2 className='my-20 text-center text-4xl'>
+        <motion.h2 
+            whileInView={{opacity: 1, y: 0}}
+            initial={{opacity: 0, y: -100}}
+            transition={{duration: .5}}
+            className='my-20 text-center text-4xl'>
             About <span className='text-neutral-500'>Me</span>
-        </h2>
+        </motion.h2>
         <div className='flex flex-wrap'>
             <motion.div 
                 whileInView={{opacity: 1, x: 0}}
@@ -35,14 +40,13 @@ export default function About() {
             </div>
         </div>  
         <div 
-           
             className='text-xl text-blue-300  mt-4  w-full flex justify-end items-end'>
             <a 
-               
                 className='bg-neutral-700 p-2 rounded-xl hover:bg-neutral-600 cursor-pointer' href='#'>
-
-                <FaExternalLinkAlt /> 
-                
+                    <Link to='about' >
+                        <FaExternalLinkAlt /> 
+                    </Link>
+     
             </a>
                         
         </div>

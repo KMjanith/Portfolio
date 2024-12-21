@@ -3,6 +3,7 @@ import {PROJECTS} from '../constants/index.js'
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { BiRotateLeft } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 
 export default function Projects() {
@@ -79,8 +80,9 @@ export default function Projects() {
                 transition={{duration: 0.5}}
                 className='bg-neutral-700 p-2 rounded-xl hover:bg-neutral-600 cursor-pointer' href='#'>
 
-                  <FaExternalLinkAlt /> 
-                  
+                <Link to="/projects">
+                    <FaExternalLinkAlt /> 
+                  </Link>
                 </motion.a>
                   
                 </motion.div>

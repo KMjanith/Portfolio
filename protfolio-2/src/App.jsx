@@ -5,6 +5,7 @@ import About from './components/About'
 import Technologies from './components/Technologies'
 import Experiance from './components/Experiance'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 Experiance
 Hero
 
@@ -20,6 +21,7 @@ export default function () {
       <Technologies />
       <Experiance />
       <Projects />
+      <Contact />
     </div>
   </div>
 

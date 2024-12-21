@@ -1,6 +1,6 @@
 import React from 'react'
 import { HERO_CONTENT } from '../constants'
-import profilePic from '../assets/kevinRushProfile.jpg'
+import profilePic from '../assets/kavindu_janith.jpg'
 import { motion } from 'motion/react'
 
 export default function Hero() {
@@ -41,16 +41,20 @@ export default function Hero() {
                     animate='visible'
                     className='my-2 max-w-xl font-light tracking-tighter'>{HERO_CONTENT}</motion.p>
                 </div> 
-            </div>
-            <div className='w-full lg:w-1/2 lg:p-8'>
-                <div className='flex justify-between'>
+            </div >
+                <motion.div 
+                 initial={{x:100, opasity:0}}
+                 animate={{x:0, opasity:1, rotate: 360}}
+                 transition={{duration:0.5}}
+                className='flex justify-center w-full lg:w-1/2 lg:p-8 '>
                     <motion.img 
                     initial={{x:100, opasity:0}}
-                    animate={{x:0, opasity:1}}
-                    transition={{duration:0.5}}
+                    animate={{x:0, opasity:1,rotateX:360}}
+                    transition={{duration:1}}
+                    className='rounded-3xl shadow-[0_0_30px_15px_rgba(5,55,120,0.6)]'
                     src={profilePic} alt="" />
-                </div>
-            </div>
+                </motion.div>
+           
         </div>
         
     </div>

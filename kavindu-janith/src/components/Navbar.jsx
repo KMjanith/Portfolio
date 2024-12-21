@@ -4,6 +4,7 @@ const Navbar = () => {
 
     const lastActiveLink = useRef();
 
+
     const navItems = [
         {
           label: 'Home',
@@ -34,9 +35,9 @@ const Navbar = () => {
       ];
 
   return (
-    <nav className=''>
+    <nav className='navbar'>
         {
-            navItems.map(({label, link, className, ref},key)=>{
+            navItems.map(({label, link, className, ref},key)=>(
                 <a 
                 href={link}
                 key={key}
@@ -44,10 +45,9 @@ const Navbar = () => {
                 ref={ref}
                 onClick={null }
                 >
-
                     {label}
                 </a>
-            })
+            ))
         }
     </nav>
   )

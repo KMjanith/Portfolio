@@ -25,7 +25,7 @@ export default function Projects() {
               
             
 
-              <div className='w-full lg:w-1/4 '>
+              <div className='w-full lg:w-1/4 flex justify-center items-center'>
               
               <motion.img 
               whileInView={{rotate:360}}
@@ -37,7 +37,7 @@ export default function Projects() {
 
               
 
-              <div className='w-full max-w-xl lg:w-3/4 '>
+              <div className='w-full max-auto lg:w-1/2 flex justify-center items-center flex-col'>
               
                 <motion.h3 
                 whileInView={{opacity: 1, x: 0}}

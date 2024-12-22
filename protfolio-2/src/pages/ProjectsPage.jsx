@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
+import Contact from '../components/Contact'
 
 export default function ProjectsPage() {
   return (
@@ -10,6 +11,7 @@ export default function ProjectsPage() {
            <div className="container mx-auto px-8">
              <Navbar />
              <Projects />
+              <Contact />
            </div>
         </div>
   )

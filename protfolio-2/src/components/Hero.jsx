@@ -39,14 +39,14 @@ export default function Hero() {
                     variants={container(0.3)}
                     initial='hidden'
                     animate='visible'
-                    className='my-2 max-w-xl font-light tracking-tighter'>{HERO_CONTENT}</motion.p>
+                    className='my-3 max-w-xl font-light tracking-tighter'>{HERO_CONTENT}</motion.p>
                 </div> 
             </div >
                 <motion.div 
                  initial={{x:100, opasity:0}}
                  animate={{x:0, opasity:1, rotate: 360}}
                  transition={{duration:0.5}}
-                className='flex justify-center w-full lg:w-1/2 lg:p-8 '>
+                className='flex justify-center w-full my-3 lg:w-1/2 lg:p-8 '>
                     <motion.img 
                     initial={{x:100, opasity:0}}
                     animate={{x:0, opasity:1,rotateX:360}}

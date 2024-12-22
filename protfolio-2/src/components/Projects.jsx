@@ -67,13 +67,11 @@ export default function Projects() {
 
                 </div>
                 
-                
-                
                 <motion.div 
                   whileInView={{opacity: 1, x: 0}}
                   initial={{opacity: 1, x: 100}}
                   transition={{duration: 0.5}}
-                className='text-xl text-blue-300  mt-4  w-full flex justify-end items-end'>
+                className='text-xl text-blue-300  mt-4  w-full flex '>
                 <motion.a 
                 whileInView={{rotate:360, x:0}}
                 initial={{opacity: 1, x: 100}}

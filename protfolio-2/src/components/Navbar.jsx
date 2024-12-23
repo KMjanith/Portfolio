@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/kavindujanithLogo.png'
+import logo from '../assets/kavindujanithLogoCroped.png'
 import { Link, NavLink } from 'react-router-dom'
 
 
@@ -37,9 +37,9 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='flex items-center justify-between flex-wrap  pt-4 pb-7 px-3'>
+    <nav className='flex items-center justify-between flex-wrap  pt-7 pb-7'>
         <Link to="/" className='flex flex-shrink-0 items-center'>
-            <img src={logo} alt="" className='mx-2 w-32'/>
+            <img src={logo} alt="" className=' w-12'/>
         </Link>
 
         <div className='hidden m-8 md:flex items-center justify-between gap-4 text-2xl  ' >

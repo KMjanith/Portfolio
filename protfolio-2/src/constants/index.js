@@ -7,6 +7,41 @@ export const HERO_CONTENT = `I am a passionate full stack developer with a knack
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
+export const BLOGS = [
+  {
+    title: "How to Build a Responsive Website Using HTML and CSS",
+    date: "June 1, 2023",
+    link: "/blog/1",
+    image: "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
+    description:
+      "Learn how to create a responsive website layout using HTML and CSS. This tutorial covers the basics of building a mobile-friendly web page from scratch.",
+  },
+  {
+    title: "Introduction to JavaScript ES6 Features",
+    date: "May 15, 2023",
+    link: "/blog/2",
+    image: "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
+    description:
+      "Discover the new features and enhancements in JavaScript ES6. This guide provides an overview of the latest updates to the ECMAScript specification.",
+  },
+  {
+    title: "Getting Started with React Hooks",
+    date: "April 28, 2023",
+    link: "/blog/3",
+    image: "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
+    description:
+      "Learn how to use React Hooks to add state and lifecycle features to functional components. This tutorial covers the basics of working with hooks in React.",
+  },
+  {
+    title: "Building a RESTful API with Node.js and Express",
+    date: "April 10, 2023",
+    link: "/blog/4",
+    image: "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
+    description:
+      "Create a RESTful API using Node.js and Express. This step-by-step guide walks you through setting up a server, defining routes, and handling requests in Node.js"
+  }
+]
+
 export const EXPERIENCES = [
   {
     year: "2023 - Present",

@@ -14,7 +14,7 @@ function Navlinks() {
           <NavLink to='/projects'  className='text-lg font-semibold'>
             Projects
           </NavLink >
-          <NavLink to='/blog' className='text-lg font-semibold'>
+          <NavLink to='/blog/1' className='text-lg font-semibold'>
             Blog
           </NavLink >
           <NavLink to='/achievements' className='text-lg font-semibold'>
@@ -37,7 +37,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='flex items-center justify-between flex-wrap  pt-7 pb-7'>
+    <nav className='flex items-center justify-between flex-wrap  pt-7 pb-7 px-4 mr-3'>
         <Link to="/" className='flex flex-shrink-0 items-center'>
             <img src={logo} alt="" className=' w-12'/>
         </Link>

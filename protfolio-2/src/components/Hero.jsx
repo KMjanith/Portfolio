@@ -33,8 +33,8 @@ export default function Hero() {
                     initial='hidden'
                     animate='visible'
                     
-                    className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl mb-3
-                    tracking-tight text-transparent '>Full Stack Developer</motion.span>
+                    className='bg-gradient-to-r from-green-300 via-purple-900 to-purple-600 bg-clip-text text-3xl mb-3
+                    tracking-tight text-transparent '>Software Enginner</motion.span>
                     <motion.p 
                     variants={container(0.3)}
                     initial='hidden'
@@ -51,7 +51,7 @@ export default function Hero() {
                     initial={{x:100, opasity:0}}
                     animate={{x:0, opasity:1,rotateX:360}}
                     transition={{duration:1}}
-                    className='rounded-3xl shadow-[0_0_30px_15px_rgba(5,55,120,0.6)]'
+                    className='rounded-3xl shadow-[0_0_30px_30px_rgba(5,55,120,0.6)]'
                     src={profilePic} alt="" />
                 </motion.div>
            

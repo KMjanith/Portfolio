@@ -1,32 +1,35 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Sidebar from '../components/Sidebar'
 
 export default function ProjectsPage() {
+
+
   return (
     <div className='overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900'>
           <div className='fixed top-0 -z-10 h-full w-full'>
             <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
           </div>
-          <div className="container mx-auto px-8">
+          <div className="container mx-auto px-8 border-b pb-20 border-neutral-600 ">
           <Navbar />
           
             <div className="flex h-full">
-           
-              <div className="flex-shrink-0 mr-2 border-r border-neutral-500">
+            
+              <div className="absolute top-20 left-19 md:flex-shrink md:relative bg-neutral-800 px-3 rounded-lg mb-10 mr-2">
                 <Sidebar />
               </div>
-    
-             
-              <div className="flex-grow ml-5">
-                <Projects />
-                <Contact />
-            
+              <div className="flex-grow ml-2 relative z-[-2] top-6">
+                <h1 className='text-3xl md:text-5xl text-center my-4 py-6'>dsdsdds</h1>
+                <h2 className='text-lg mb-4'>sdsdsdsd</h2>
+                <div className='flex flex-col justify-center items-center flex-nowrap'>
+                  {/* <img src={blog.image} className=' items-center rounded-lg'/> */}
+                  <p className='mt-6'>sasasa</p>
+                </div>
+              </div>
             </div>
+          </div>
+         <Contact />
         </div>
-      </div>
-    </div>
   )
 }

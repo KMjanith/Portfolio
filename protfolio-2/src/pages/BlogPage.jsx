@@ -14,25 +14,25 @@ export default function BlogPage() {
           <div className='fixed top-0 -z-10 h-full w-full'>
             <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
           </div>
-          <div className="container mx-auto px-8 border-b pb-20 border-neutral-600">
+          <div className="container mx-auto px-8 border-b pb-20 border-neutral-600 ">
           <Navbar />
           
             <div className="flex h-full">
             
-              <div className="flex-shrink-0 md:mr-2 border-r border-neutral-700">
+              <div className="md:relative top-20 left-19 md:flex-shrink-0 md:mr-2 md:mb-10 absolute  rounded-xl bg-neutral-800  px-2">
                 <Sidebar />
               </div>
-              <div className="flex-grow ml-4">
-                <h1 className='text-3xl md:text-6xl text-center my-4 py-6'>{blog.title}</h1>
+              <div className="flex-grow ml-2 relative z-[-2] top-6">
+                <h1 className='text-3xl md:text-5xl text-center my-4 py-6'>{blog.title}</h1>
                 <h2 className='text-lg mb-4'>{blog.date}</h2>
                 <div className='flex flex-col justify-center items-center flex-nowrap'>
-                  <img src={blog.image} className='p-10 items-center rounded-lg'/>
+                  <img src={blog.image} className=' items-center rounded-lg'/>
                   <p className='mt-6'>{blog.description}</p>
                 </div>
               </div>
             </div>
           </div>
-           <Contact />
+         <Contact />
         </div>
   )
 }

@@ -17,17 +17,32 @@ export default function BlogPage() {
           <div className="container mx-auto px-8 border-b pb-20 border-neutral-600 ">
           <Navbar />
           
-            <div className="flex h-full">
+            <div className="flex h-full justify-between items-center">
             
-              <div className="md:relative top-20 left-19 md:flex-shrink-0 md:mr-2 md:mb-10 absolute  rounded-xl bg-neutral-800  px-2">
-                <Sidebar />
+              <div className="md:relative top-20 left-19 md:flex-shrink-0 md:mr-2 md:mb-10 absolute  rounded-xl bg-gradient-to-br from-slate-950 to-slate-800 px-2">
+                <Sidebar data={BLOGS} />
               </div>
               <div className="flex-grow ml-2 relative z-[-2] top-6">
                 <h1 className='text-3xl md:text-5xl text-center my-4 py-6'>{blog.title}</h1>
                 <h2 className='text-lg mb-4'>{blog.date}</h2>
                 <div className='flex flex-col justify-center items-center flex-nowrap'>
                   <img src={blog.image} className=' items-center rounded-lg'/>
-                  <p className='mt-6'>{blog.description}</p>
+                  {
+                    blog.description.map((item, index) => (
+                      typeof item === 'string' ? <p key={index} className='mt-6'>{item}</p> :
+                      <div>
+                        <h2 className='text-2xl font-semibold my-4 text-start'>{item.subTitle}</h2>
+                        {
+                          item.points.map((subItem, subIndex) => (
+                            <p key={subIndex} className='mt-6'>{subItem}</p>
+                          )
+                          ) 
+                            
+                        }
+                      </div>
+                      
+                    ))
+                  }
                 </div>
               </div>
             </div>

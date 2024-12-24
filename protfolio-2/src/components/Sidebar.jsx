@@ -1,12 +1,11 @@
 // Sidebar Component
 import React, { useState } from 'react';
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { BLOGS } from '../constants';
 import { Link, useLocation } from 'react-router-dom';
 import { BsFillMenuButtonWideFill } from "react-icons/bs";
 
 
-export default function Sidebar() {
+export default function Sidebar({data}) {
   const [isOpen, setIsOpen] = useState(true);
   const location = useLocation();
 
@@ -19,7 +18,7 @@ export default function Sidebar() {
         <div className={isOpen ? `flex flex-col items-center justify-center gap-4 pb-4` : ` hidden md:flex flex-col items-center justify-center gap-4 mt-8`}>
 
             {
-                BLOGS.map((item, index) => {
+                data.map((item, index) => {
                     const isActive = location.pathname === item.link;
                     return(
                         <Link

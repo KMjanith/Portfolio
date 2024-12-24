@@ -2,7 +2,6 @@ import React from 'react'
 import {PROJECTS} from '../constants/index.js'
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from 'framer-motion';
-import { BiRotateLeft } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
 

@@ -11,7 +11,7 @@ function Navlinks() {
           <NavLink to='/about' className='text-lg font-semibold'>
             About
           </NavLink>
-          <NavLink to='/projects'  className='text-lg font-semibold'>
+          <NavLink to='/projects/1'  className='text-lg font-semibold'>
             Projects
           </NavLink >
           <NavLink to='/blog/1' className='text-lg font-semibold'>

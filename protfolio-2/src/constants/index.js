@@ -13,32 +13,50 @@ export const BLOGS = [
     date: "June 1, 2023",
     link: "/blog/1",
     image: "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
-    description:
-      "Learn how to create a responsive website layout using HTML and CSS. This tutorial covers the basics of building a mobile-friendly web page from scratch.",
+    description:[
+        "Learn how to create a responsive website layout using HTML and CSS. This tutorial covers the basics of building a mobile-friendly web page from scratch.",
+    ]
+      
   },
   {
     title: "Introduction to JavaScript ES6 Features",
     date: "May 15, 2023",
     link: "/blog/2",
     image: "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
-    description:
+    description:[
       "Discover the new features and enhancements in JavaScript ES6. This guide provides an overview of the latest updates to the ECMAScript specification.",
+    ]
+      
   },
   {
     title: "Getting Started with React Hooks",
     date: "April 28, 2023",
     link: "/blog/3",
     image: "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
-    description:
+    description:[
       "Learn how to use React Hooks to add state and lifecycle features to functional components. This tutorial covers the basics of working with hooks in React.",
+      "Learn how to use React Hooks to add state and lifecycle features to functional components. This tutorial covers the basics of working with hooks in React.",
+      "Learn how to use React Hooks to add state and lifecycle features to functional components. This tutorial covers the basics of working with hooks in React.",
+      {
+        "subTitle": "What you'll learn:",
+        "points": [
+          "How to use the useState hook to manage component state",
+          "How to use the useEffect hook to perform side effects in functional components",
+          "How to create custom hooks to reuse stateful logic across components"]
+      }
+    ]
+     
+
   },
   {
     title: "Building a RESTful API with Node.js and Express",
     date: "April 10, 2023",
     link: "/blog/4",
     image: "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
-    description:
-      "Create a RESTful API using Node.js and Express. This step-by-step guide walks you through setting up a server, defining routes, and handling requests in Node.js"
+    description:[
+        "Create a RESTful API using Node.js and Express. This step-by-step guide walks you through setting up a server, defining routes, and handling requests in Node.js"
+    ]
+      
   }
 ]
 
@@ -76,6 +94,7 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "E-Commerce Website",
+    link: "/projects/1",
     image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
@@ -83,6 +102,7 @@ export const PROJECTS = [
   },
   {
     title: "Task Management App",
+    link: "/projects/2",
     image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
@@ -90,6 +110,7 @@ export const PROJECTS = [
   },
   {
     title: "Portfolio Website",
+    link: "/projects/3",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
@@ -97,6 +118,7 @@ export const PROJECTS = [
   },
   {
     title: "Blogging Platform",
+    link: "/projects/4",
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",

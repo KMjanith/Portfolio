@@ -11,10 +11,10 @@ export default function Sidebar() {
   const location = useLocation();
 
   return (
-    <div className={`${isOpen ? 'w-64' : 'w-16'} h-scren pr-3 pb-10 text-white flex flex-col transition-all duration-300`}>
+    <div className={`${isOpen ? 'w-64' : 'w-10 md:w-14'} sm:mr-1 md:mr-5 md:p-1 text-white flex flex-col justify-center items-center transition-all duration-300`}>
       
         <button className='p-2 m-2 rounded-md' onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <IoMdArrowRoundBack className='w-full h-10 ' /> : <BsFillMenuButtonWideFill className='w-full h-10' />}
+        {isOpen ? <IoMdArrowRoundBack className='w-10 h-10 ' /> : <BsFillMenuButtonWideFill className='w-4 h-10' />}
         </button>
         <div className={isOpen ? `flex flex-col items-center justify-center gap-4 mt-8` : ` hidden md:flex flex-col items-center justify-center gap-4 mt-8`}>
 

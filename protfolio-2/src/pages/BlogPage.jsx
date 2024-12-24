@@ -19,13 +19,11 @@ export default function BlogPage() {
           
             <div className="flex h-full">
             
-              <div className="flex-shrink-0 mr-2 border-r border-neutral-700">
+              <div className="flex-shrink-0 md:mr-2 border-r border-neutral-700">
                 <Sidebar />
               </div>
-    
-              
               <div className="flex-grow ml-4">
-                <h1 className='text-6xl text-center my-4 py-6'>{blog.title}</h1>
+                <h1 className='text-3xl md:text-6xl text-center my-4 py-6'>{blog.title}</h1>
                 <h2 className='text-lg mb-4'>{blog.date}</h2>
                 <div className='flex flex-col justify-center items-center flex-nowrap'>
                   <img src={blog.image} className='p-10 items-center rounded-lg'/>

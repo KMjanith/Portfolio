@@ -33,10 +33,10 @@ export default function Hero() {
               variants={container(0.2)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-green-300 via-purple-900 to-purple-600 bg-clip-text text-3xl mb-3
+              className="bg-gradient-to-r from-green-300 via-cyan-500 to-purple-300 bg-clip-text text-4xl mb-3
                     tracking-tight text-transparent "
             >
-              Software Enginner
+              Software Engineer
             </motion.span>
             <motion.p
               variants={container(0.3)}

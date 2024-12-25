@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import aboutImage from "../assets/aboutme.jpg";
 import { ABOUT_TEXT } from "../constants";
 import AboutHero from "../components/aboutmepage/AboutHero";
+import AboutSchool from "../components/aboutmepage/AboutSchool";
+import AboutUni from "../components/aboutmepage/AboutUni";
 
 export default function AboutPage() {
   return (
@@ -17,7 +19,8 @@ export default function AboutPage() {
         <Navbar />
 
         <AboutHero />
-
+        <AboutSchool />
+        <AboutUni />
         <Contact />
       </div>
     </div>

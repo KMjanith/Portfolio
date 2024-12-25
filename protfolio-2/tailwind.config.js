@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 export default {
   content: [
     "./index.html",
@@ -6,6 +9,11 @@ export default {
   ],
   theme: {
     extend: {},
+    theme: {
+      colors : {
+        puka:'#171714'
+      }
+    }
   },
   plugins: [],
 }

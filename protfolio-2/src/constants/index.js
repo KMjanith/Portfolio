@@ -18,17 +18,17 @@ export const SCHOOL = [
     image: school1,
     school: "Wp/kl Bauddhaloka maha vidyalaya ",
     location: "Panadura, Sri Lanka",
-    description: [{
-      subTitle: "Achievements:",
-      points: [
-        "Passed Grade 5 Scholarship Exam",
-      ],
-    },]
+    description: [
+      {
+        subTitle: "Achievements:",
+        points: ["Passed Grade 5 Scholarship Exam"],
+      },
+    ],
   },
   {
     year: "2010 - 2018",
     image: school2,
-      
+
     school: "Nalanda College Colombo 10",
     location: "Colombo, Sri Lanka",
     description: [
@@ -58,16 +58,13 @@ export const SCHOOL = [
   },
 ];
 
-export const ACHIEVEMENTS = [
+export const UNIVERSITY = [
   {
     year: "2010 - 2018",
     image: school2,
-      
     school: "Nalanda College Colombo 10",
     location: "Colombo, Sri Lanka",
     description: [
-   
-
       {
         subTitle: "Acedemic Achievements:",
         points: [
@@ -86,7 +83,34 @@ export const ACHIEVEMENTS = [
       },
     ],
   },
-]
+];
+
+export const ACHIEVEMENTS = [
+  {
+    year: "2010 - 2018",
+    image: school2,
+    school: "Nalanda College Colombo 10",
+    location: "Colombo, Sri Lanka",
+    description: [
+      {
+        subTitle: "Acedemic Achievements:",
+        points: [
+          "Passed G.C.E. Ordinary Level Exam passed with 9A's",
+          "Passed G.C.E. Advanced Level Exam passed with 3A's in Physical Science Stream (z-score 1.8144)",
+        ],
+      },
+
+      {
+        subTitle: "Sports Achievements:",
+        points: [
+          "under 21 Sri Lanka Karate Team representation",
+          "2016,2017 bronze medel winner - Sri Lanka Karate Championship (organized by Sri lanka Karate do federation)",
+          "Rising Son of the year 2017 - Nalanda College Colombo",
+        ],
+      },
+    ],
+  },
+];
 
 export const BLOGS = [
   {

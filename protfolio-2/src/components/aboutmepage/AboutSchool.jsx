@@ -18,12 +18,12 @@ export default function AboutSchool() {
 
       <div className="flex flex-wrap flex-col mt-5 ">
         {SCHOOL.map((item, index) => (
-          <div key={index}>
+          <div key={index} >
             <p>
               <strong>Year - </strong>
               {item.year}
             </p>
-            <div className="flex flex-col justify-center items-center py-3 border border-neutral-800 rounded-xl my-5">
+            <div className="flex flex-col justify-center items-center py-3 rounded-xl my-5 bg-gradient-to-bl from-slate-950 via-slate-900 via-50% to-slate-950" >
               <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}

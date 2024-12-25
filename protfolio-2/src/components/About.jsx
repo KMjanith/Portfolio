@@ -24,18 +24,22 @@ export default function About() {
                 transition={{duration: .5}}
             className='w-full lg:w-1/2 lg:p-8'>
                 <div className='flex items-center justify-center'>
-                    <img className='rounded-2xl' src={aboutImage} alt="" />
+                    <img className='rounded-2xl mb-5' src={aboutImage} alt="" />
                 </div>
             </motion.div>
     
-            <div className='w-full lg:w-1/2'>
+            <div className='w-full lg:w-1/2 flex flex-col items-center justify-center gap-4 pb-12'>
                 <motion.div 
                     whileInView={{opacity: 1, x: 0}}
                     initial={{opacity: 0, x: 100}}
                     transition={{duration: .5}}
                 className='flex justify-center items-center'>
-                    <p className='max-w-xl lg:p-8'>{ABOUT_TEXT}</p>
+                    <p className='max-w-xl lg:p-8 md:text-lg'>{ABOUT_TEXT[0]}</p>
                 </motion.div>
+
+                <button type="button" className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-blue-500 hover:to-purple-500 p-2 lg:p-3 rounded-lg text-black font-bold">
+                DOWNLOAD CV
+                </button>
                 
             </div>
         </div>  

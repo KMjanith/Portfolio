@@ -3,9 +3,13 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate software engineer with a talent for designing and developing scalable systems, web applications, and mobile solutions. Specializing in microservices, distributed systems, and DevOps, I work with modern technologies like Python, Go, Java, and Scala, alongside databases such as MySQL, PostgreSQL, Cassandra, and MongoDB. My focus is on creating innovative, efficient, and user-centric solutions that stand out.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = [
+  "I am a passionate and dedicated software engineering undergraduate with a strong interest in creating innovative solutions for real-world problems. My expertise spans <strong>building systems, web applications, and mobile applications, with a focus on microservices architecture, distributed systems,</strong> and <strong>DevOps practices.</strong>",
+  "Proficient in <strong>Python</strong>, <strong>Go</strong>, <strong>Java</strong>, and <strong>Scala</strong>, I have a solid foundation in back-end and front-end development. I am experienced with databases like <strong>MySQL</strong>, <strong>PostgreSQL</strong>, <strong>Cassandra</strong>, and <strong>MongoDB</strong>, and use tools like <strong>Docker</strong> and <strong>Kubernetes</strong> to streamline deployments and workflows. I enjoy exploring emerging technologies and solving challenging problems."
+];
+
 
 export const BLOGS = [
   {

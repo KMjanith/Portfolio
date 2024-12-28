@@ -1,9 +1,6 @@
 import Navbar from "../components/Navbar";
 import React from "react";
 import Contact from "../components/Contact";
-import { motion } from "framer-motion";
-import aboutImage from "../assets/aboutme.jpg";
-import { ABOUT_TEXT } from "../constants";
 import AboutHero from "../components/aboutmepage/AboutHero";
 import AboutSchool from "../components/aboutmepage/AboutSchool";
 import AboutUni from "../components/aboutmepage/AboutUni";

@@ -42,10 +42,10 @@ export default function Hero() {
               variants={container(0.3)}
               initial="hidden"
               animate="visible"
-              className="my-3 max-w-xl font-light tracking-tighter"
-            >
-              {HERO_CONTENT}
-            </motion.p>
+              className="max-w-xl py-3 font-mono"
+              dangerouslySetInnerHTML={{ __html: HERO_CONTENT}}
+            />
+          
           </div>
         </div>
         <motion.div

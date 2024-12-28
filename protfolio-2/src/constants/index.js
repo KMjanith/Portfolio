@@ -2,10 +2,10 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
-import school1 from "../assets/bauddhaloka.png";
-import school2 from "../assets/nalanda_logo.png";
+import school1 from "../assets/about/bauddhaloka.png";
+import school2 from "../assets/about/nalanda_logo.png";
 
-export const HERO_CONTENT = `I am a passionate software engineer with a talent for designing and developing scalable systems, web applications, and mobile solutions. Specializing in microservices, distributed systems, and DevOps, I work with modern technologies like Python, Go, Java, and Scala, alongside databases such as MySQL, PostgreSQL, Cassandra, and MongoDB. My focus is on creating innovative, efficient, and user-centric solutions that stand out.`;
+export const HERO_CONTENT = `I am a passionate software engineer with a talent for designing and developing <strong>scalable systems, web applications, and mobile solutions</strong>. Specializing in <strong>microservices, distributed systems</strong>, and <strong>DevOps</strong>, I work with modern technologies like <strong>Python, Go, Java</strong>, and <strong>Scala</strong>, alongside databases such as <strong>MySQL, PostgreSQL, Cassandra</strong>, and <strong>MongoDB</strong>. My focus is on creating innovative, efficient, and user-centric solutions that stand out.`;
 
 export const ABOUT_TEXT = [
   "I am a passionate and dedicated software engineering undergraduate with a strong interest in creating innovative solutions for real-world problems. My expertise spans <strong>building systems, web applications, and mobile applications, with a focus on microservices architecture, distributed systems,</strong> and <strong>DevOps practices.</strong>",
@@ -58,10 +58,10 @@ export const SCHOOL = [
   },
 ];
 
-export const UNIVERSITY = [
+export const UNIVERSITY = 
   {
-    year: "2010 - 2018",
-    image: school2,
+    year: "2020 present",
+    image: "https://avatars.githubusercontent.com/u/34195637?s=280&v=4",
     school: "Nalanda College Colombo 10",
     location: "Colombo, Sri Lanka",
     description: [
@@ -82,8 +82,8 @@ export const UNIVERSITY = [
         ],
       },
     ],
-  },
-];
+  }
+
 
 export const ACHIEVEMENTS = [
   {

@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../assets/about.jpg";
+import aboutImage from "../assets/about/about.jpg";
 import CV from "../assets/CV.pdf";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
@@ -37,7 +37,7 @@ export default function About() {
             className="flex justify-center items-center"
           >
             <p
-              className="max-w-xl lg:p-8 pb-3"
+              className="max-w-xl lg:p-8 pb-3 font-mono"
               dangerouslySetInnerHTML={{ __html: ABOUT_TEXT[0] }}
             />
           </motion.div>

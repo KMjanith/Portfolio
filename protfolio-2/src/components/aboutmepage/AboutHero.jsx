@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aboutImage from "../../assets/aboutme.jpg";
+import aboutImage from "../../assets/about/aboutme.jpg";
 import { ABOUT_TEXT } from "../../constants";
 import CV from "../../assets/CV.pdf";
 

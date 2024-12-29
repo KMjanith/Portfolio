@@ -77,17 +77,17 @@ export default function Projects() {
                 transition={{ duration: 0.5 }}
                 className="text-xl text-blue-300  mt-4  w-full flex "
               >
-                <motion.a
+                <motion.div
                   whileInView={{ rotate: 360, x: 0 }}
                   initial={{ opacity: 1, x: 100 }}
                   transition={{ duration: 0.5 }}
                   className="bg-neutral-700 p-2 rounded-xl hover:bg-neutral-600 cursor-pointer"
                   href="#"
                 >
-                  <Link to="/projects">
+                  <Link to={project.link}>
                     <FaExternalLinkAlt />
                   </Link>
-                </motion.a>
+                </motion.div>
               </motion.div>
             </div>
           </div>

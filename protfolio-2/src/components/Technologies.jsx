@@ -1,11 +1,12 @@
 import React from "react";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { DiRedis } from "react-icons/di";
+import { DiPython, DiScala } from "react-icons/di";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { FaGolang } from "react-icons/fa6";
+import { FaFlutter, FaGolang } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { GrDocker } from "react-icons/gr";
+
 
 export default function Technologies() {
   const iconVariants = (duration) => ({
@@ -50,7 +51,7 @@ export default function Technologies() {
           animate="animate"
           className="border-4 border-neutral-500 rounded-2xl p-4"
         >
-          <DiRedis className="text-7xl text-red-400" />
+          <DiScala className="text-7xl text-red-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(2.5)}
@@ -66,7 +67,7 @@ export default function Technologies() {
           animate="animate"
           className="border-4 border-neutral-500 rounded-2xl p-4"
         >
-          <TbBrandNextjs className="text-7xl text-gray-400" />
+          <GrDocker className="text-7xl text-blue-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(2.5)}
@@ -83,6 +84,22 @@ export default function Technologies() {
           className="border-4 border-neutral-500 rounded-2xl p-4"
         >
           <BiLogoPostgresql className="text-7xl text-blue-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(1.5)}
+          initial="initial"
+          animate="animate"
+          className="border-4 border-neutral-500 rounded-2xl p-4"
+        >
+          <DiPython className="text-7xl text-yellow-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(1.5)}
+          initial="initial"
+          animate="animate"
+          className="border-4 border-neutral-500 rounded-2xl p-4"
+        >
+          <FaFlutter className="text-7xl text-cyan-500" />
         </motion.div>
       </motion.div>
     </div>

@@ -5,16 +5,16 @@ import { Link, NavLink } from "react-router-dom";
 function Navlinks() {
   return (
     <>
-      <NavLink to="/about" className="text-lg font-semibold">
+      <NavLink to="/about" className="text-lg font-sans font-semibold">
         About
       </NavLink>
-      <NavLink to="/projects/1" className="text-lg font-semibold">
+      <NavLink to="/projects/1" className="text-lg font-sans font-semibold">
         Projects
       </NavLink>
-      <NavLink to="/blog/1" className="text-lg font-semibold">
+      <NavLink to="/blog/1" className="text-lg font-sans font-semibold">
         Blog
       </NavLink>
-      <NavLink to="/achievements" className="text-lg font-semibold">
+      <NavLink to="/achievements" className="text-lg font-sans font-semibold">
         Achevements
       </NavLink>
     </>

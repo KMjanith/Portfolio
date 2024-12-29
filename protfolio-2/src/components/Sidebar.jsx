@@ -34,7 +34,7 @@ export default function Sidebar({ data }) {
             <Link
               onClick={() => setIsOpen(false)}
               to={item.link}
-              className={`text-sm w-full rounded-md border-r border-b border-purple-200 p-1 text-start font-normal my-2 ${
+              className={`text-sm w-full rounded-md border-r border-b border-neutral-700 p-1 text-start font-normal my-2 ${
                 isActive ? "bg-sky-700" : "hover:bg-sky-700"
               }`}
               key={index}

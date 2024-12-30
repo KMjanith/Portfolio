@@ -42,7 +42,7 @@ export default function Hero() {
               variants={container(0.3)}
               initial="hidden"
               animate="visible"
-              className="max-w-xl py-3 font-mono"
+              className="max-w-xl py-3 font-afaced_400"
               dangerouslySetInnerHTML={{ __html: HERO_CONTENT}}
             />
           

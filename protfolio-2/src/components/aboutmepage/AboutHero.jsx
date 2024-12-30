@@ -48,7 +48,7 @@ export default function AboutHero() {
           >
             {ABOUT_TEXT.map((item, index) => (
               <p
-                className="max-w-xl lg:p-8 pb-3 text-white "
+                className="max-w-xl lg:p-8 pb-3 text-white font-afaced_400 "
                 key={index}
                 dangerouslySetInnerHTML={{ __html: item }}
               />

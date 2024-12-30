@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import PageroWin from "../components/achievements/PageroWin";
 import Contact from "../components/Contact";
+import Certificates from "../components/achievements/Certificates";
+import TalkToether from "../components/achievements/TalkToether";
 
 export default function AchievementsPage() {
   return (
@@ -21,7 +23,11 @@ export default function AchievementsPage() {
         >
           My <span className="text-cyan-500">Achievements</span>
         </motion.h2>
-        <PageroWin />
+        <div className="border-b border-neutral-700 lg:mb-6 lg:pb-4">
+          <PageroWin />
+          <TalkToether />
+        </div>
+        <Certificates />
         <Contact />
       </div>
     </div>

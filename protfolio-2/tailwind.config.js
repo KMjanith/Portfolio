@@ -10,9 +10,10 @@ export default {
   theme: {
     extend: {},
     theme: {
-      colors : {
-        puka:'#171714'
-      }
+    },
+    fontFamily: {
+      afaced: ['Afacad Flux',"serif"],
+      afaced_400: ["Afacad Flux", "serif"] 
     }
   },
   plugins: [],

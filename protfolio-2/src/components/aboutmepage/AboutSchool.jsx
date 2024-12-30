@@ -18,12 +18,12 @@ export default function AboutSchool() {
 
       <div className="flex flex-wrap flex-col mt-5 ">
         {SCHOOL.map((item, index) => (
-          <div key={index} >
+          <div key={index}>
             <p>
               <strong>Year - </strong>
               {item.year}
             </p>
-            <div className="flex flex-col justify-center items-center py-3 rounded-xl my-5 bg-gradient-to-bl from-slate-950 via-slate-900 via-50% to-slate-950 border-r border-b border-neutral-500" >
+            <div className="flex flex-col justify-center items-center py-3 rounded-xl my-5 bg-gradient-to-bl from-slate-950 via-slate-900 via-50% to-slate-950 border-r border-b border-neutral-500">
               <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
@@ -40,14 +40,18 @@ export default function AboutSchool() {
                 className="text-neutral-200 p-5 max-w-xl flex justify-start items-start flex-col"
               >
                 <div>
-                  <span className="font-mono text-lg lg:text-xl">Location : </span>{" "}
+                  <span className="font-mono text-lg lg:text-xl">
+                    Location :{" "}
+                  </span>{" "}
                   <span className="ml-4 text-sm text-neutral-400 lg:text-lg">
                     {item.location}
                   </span>
                 </div>
                 {item.description.map((desc, descIndex) => (
                   <div key={descIndex} className="py-2">
-                    <span className="font-mono lg:text-xl">{desc.subTitle}</span>
+                    <span className="font-mono lg:text-xl">
+                      {desc.subTitle}
+                    </span>
                     {desc.points.map((point, pointIndex) => (
                       <p
                         key={pointIndex}

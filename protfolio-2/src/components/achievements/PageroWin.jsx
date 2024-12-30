@@ -18,7 +18,7 @@ export default function PageroWin() {
   }, []);
 
   return (
-    <div className="flex lg:flex-row justify-center items-center flex-col h-full border-b  border-neutral-600 my-10 py-10">
+    <div className="flex lg:flex-row justify-center items-center flex-col h-full my-10 py-5 border px-6 rounded-2xl border-neutral-600">
       {/* Confetti Effect */}
       {showConfetti && (
         <Confetti width={window.outerWidth} height={window.outerHeight} />
@@ -67,7 +67,7 @@ export default function PageroWin() {
             transition={{ duration: 0.8, type: "spring", stiffness: 80 }}
             className="text-3xl lg:text-4xl font-sans my-2 "
           >
-            Pagero <span className="text-green-500">Code Serge </span>November
+            Pagero <strong className="text-green-500">Code Serge </strong>November
             challenge
           </motion.p>
           <motion.h2

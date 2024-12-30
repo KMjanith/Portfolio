@@ -42,16 +42,16 @@ export const SCHOOL = [
       {
         subTitle: "Sports: ",
         points: [
-          "wise captian of the school swimming team (2016 - 2017)",
-          "Captian of School Karaye team (2016 - 2017)",
+          "wise captian of the school Karate team (2016 - 2017)",
+          "Captain of School Karate team (2016 - 2017)",
           "Member of the school swimming team",
         ],
       },
       {
         subTitle: "Acedemic:",
         points: [
-          "Passed G.C.E. Ordinary Level Exam passed with 9A's",
-          "Passed G.C.E. Advanced Level Exam passed with 3A's in Physical Science Stream (z-score 1.8144)",
+          "Passed G.C.E. Ordinary Level Exam with 9A's",
+          "Passed G.C.E. Advanced Level Exam with 3A's in Physical Science Stream (z-score 1.8144)",
         ],
       },
     ],

@@ -85,13 +85,23 @@ export default function PageroWin() {
             transition={{ duration: 0.7, type: "tween", stiffness: 100 }}
             className="mt-5 lg:mt-12 lg:max-w-xl text-start flex flex-col justify-center items-center"
           >
-            <p className="my-2 text-neutral-400">
+            <motion.p
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: -100 }}
+              transition={{ duration: 0.5}}
+              className="my-2 text-neutral-400"
+            >
               The competition was held by{" "}
               <strong>Pagero Lanka (PVT) LTD</strong> in November 2024, and it
               was an exciting challenge that tested the coding skills of all
               participants about <strong>Web Scraping</strong>
-            </p>
-            <p className="my-2 text-neutral-400">
+            </motion.p>
+            <motion.p
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: -100 }}
+              transition={{ duration: 0.5}}
+              className="my-2 text-neutral-400"
+            >
               They needed to srape the content from React official documentation
               and specific contents from nthe aws documentatation with{" "}
               <strong>code snippets</strong>. Also they expected the output in{" "}
@@ -101,7 +111,7 @@ export default function PageroWin() {
                 best practices in web scraping,code modularity, error hndeling
               </strong>{" "}
               also evaluated.
-            </p>
+            </motion.p>
             {/*technologies */}
 
             <div className="flex jstify-center items-center flex-wrap gap-3">

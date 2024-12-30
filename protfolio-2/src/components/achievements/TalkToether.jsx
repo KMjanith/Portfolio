@@ -77,7 +77,7 @@ export default function TalkToether() {
           </motion.div>
         </motion.div>
       </div>
-      <div className="flex items-center justify-center w-full hover:scale-125 rounded-2xl transition-transform duration-300">
+      <div className="flex items-center justify-center w-full hover:scale-125 transition-transform duration-300">
         <motion.img
           whileInView={{ rotate: 360 }}
           initial={{ scale: 1 }}

@@ -5,12 +5,12 @@ import { CERTIFICATES } from "../../constants";
 
 export default function Certificates() {
   return (
-    <div className="mt-8">
+    <div className="mt-12 border-b border-neutral-700 pb-12">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="text-center text-3xl md:text-5xl border-b border-neutral-700 pb-4"
+        className="text-center text-3xl md:text-5xl "
       >
         Certific<span className="text-cyan-600">ate</span>s
       </motion.h2>
@@ -48,13 +48,14 @@ function CertificatesCompoent({ image, url, heading, date, description }) {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.5 }}
-          className="text-lg lg:text-3xl flex justify-between text-white"
+          className="text-xl lg:text-3xl text-white flex lg:flex-row flex-col justify-between"
         >
           {heading}
           <a href={url} target="_blank" rel="noopener noreferrer">
             <PiLinkThin className="text-white mr-2" />
           </a>
         </motion.p>
+       
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
@@ -66,7 +67,14 @@ function CertificatesCompoent({ image, url, heading, date, description }) {
           </p>
         </motion.p>
         <div className="flex">
-          <p className="text-neutral-400">{description}</p>
+          <motion.p
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 0.5 }}
+            className="text-neutral-400"
+          >
+            {description}
+          </motion.p>
         </div>
       </div>
     </div>

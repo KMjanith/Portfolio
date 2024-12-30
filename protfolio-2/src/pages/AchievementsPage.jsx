@@ -5,6 +5,7 @@ import PageroWin from "../components/achievements/PageroWin";
 import Contact from "../components/Contact";
 import Certificates from "../components/achievements/Certificates";
 import TalkToether from "../components/achievements/TalkToether";
+import Badges from "../components/achievements/Badges";
 
 export default function AchievementsPage() {
   return (
@@ -28,6 +29,7 @@ export default function AchievementsPage() {
           <TalkToether />
         </div>
         <Certificates />
+        <Badges />
         <Contact />
       </div>
     </div>

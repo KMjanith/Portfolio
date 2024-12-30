@@ -4,6 +4,8 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import school1 from "../assets/about/bauddhaloka.png";
 import school2 from "../assets/about/nalanda_logo.png";
+import kodeCloude from "../assets/certificates/kodecloude.png";
+import courseera from "../assets/certificates/couseera.png";
 
 export const HERO_CONTENT = `I am a passionate software engineer with a talent for designing and developing <strong>scalable systems, web applications, and mobile solutions</strong>. Specializing in <strong>microservices, distributed systems</strong>, and <strong>DevOps</strong>, I work with modern technologies like <strong>Python, Go, Java</strong>, and <strong>Scala</strong>, alongside databases such as <strong>MySQL, PostgreSQL, Cassandra</strong>, and <strong>MongoDB</strong>. My focus is on creating innovative, efficient, and user-centric solutions that stand out.`;
 
@@ -58,32 +60,30 @@ export const SCHOOL = [
   },
 ];
 
-export const UNIVERSITY = 
-  {
-    year: "2020 present",
-    image: "https://avatars.githubusercontent.com/u/34195637?s=280&v=4",
-    school: "Nalanda College Colombo 10",
-    location: "Colombo, Sri Lanka",
-    description: [
-      {
-        subTitle: "Acedemic Achievements:",
-        points: [
-          "Passed G.C.E. Ordinary Level Exam passed with 9A's",
-          "Passed G.C.E. Advanced Level Exam passed with 3A's in Physical Science Stream (z-score 1.8144)",
-        ],
-      },
+export const UNIVERSITY = {
+  year: "2020 present",
+  image: "https://avatars.githubusercontent.com/u/34195637?s=280&v=4",
+  school: "Nalanda College Colombo 10",
+  location: "Colombo, Sri Lanka",
+  description: [
+    {
+      subTitle: "Acedemic Achievements:",
+      points: [
+        "Passed G.C.E. Ordinary Level Exam passed with 9A's",
+        "Passed G.C.E. Advanced Level Exam passed with 3A's in Physical Science Stream (z-score 1.8144)",
+      ],
+    },
 
-      {
-        subTitle: "Sports Achievements:",
-        points: [
-          "under 21 Sri Lanka Karate Team representation",
-          "2016,2017 bronze medel winner - Sri Lanka Karate Championship (organized by Sri lanka Karate do federation)",
-          "Rising Son of the year 2017 - Nalanda College Colombo",
-        ],
-      },
-    ],
-  }
-
+    {
+      subTitle: "Sports Achievements:",
+      points: [
+        "under 21 Sri Lanka Karate Team representation",
+        "2016,2017 bronze medel winner - Sri Lanka Karate Championship (organized by Sri lanka Karate do federation)",
+        "Rising Son of the year 2017 - Nalanda College Colombo",
+      ],
+    },
+  ],
+};
 
 export const ACHIEVEMENTS = [
   {
@@ -180,7 +180,6 @@ export const EXPERIENCES = [
     description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
     technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
   },
-  
 ];
 
 export const PROJECTS = [
@@ -219,7 +218,30 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "44/5 janaiya mawatha, Avariyawatta, Alubomulla, Panadura, Sri Lanka",
+  address:
+    "44/5 janaiya mawatha, Avariyawatta, Alubomulla, Panadura, Sri Lanka",
   phoneNo: "+994 77 050 6463",
   email: "kavinduj.20@cse.mrt.ac.lk",
 };
+
+export const CERTIFICATES = [
+  {
+    image: kodeCloude,
+    url: "https://learn.kodekloud.com/user/certificate/f55abfdf-c426-4ee8-a3d4-25fb9c5888e9",
+    heading: "YouTube Labs - Kubernetes Crash Course",
+    date: "August 27, 2024",
+    description:
+      "Kodecloude gives hands on lab experiance on kubernetes. I got the fundemental and basic  knowledge of kubernetes from this course.",
+  },
+  {
+    image: courseera,
+    url: "https://www.coursera.org/account/accomplishments/verify/P38LC3TVWM36",
+    heading: "Application Development using Microservices and Serverless",
+    date: "December 17, 2024",
+    description:
+      `Got a better Hands on Experiance about deploying microservice in 
+      IBM cloude code engine and serverless in IBM cloude function. Also got a better understading 
+      about microservices architecture, error handeling and ibmcloude CLI. `,
+  },
+];
+

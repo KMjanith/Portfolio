@@ -23,7 +23,7 @@ export default function AboutSchool() {
               <strong>Year - </strong>
               {item.year}
             </p>
-            <div className="flex flex-col justify-center items-center py-3 rounded-xl my-5 bg-gradient-to-bl from-slate-950 via-slate-900 via-50% to-slate-950 border-r border-b border-neutral-500">
+            <div className="flex flex-col justify-center items-center py-3 rounded-xl my-5 bg-gradient-to-bl from-slate-950 via-slate-900 via-50% to-slate-950 border-r border-b border-neutral-500 shadow-lg shadow-purple-950">
               <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}

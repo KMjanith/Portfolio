@@ -32,10 +32,10 @@ export default function AboutHero() {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="w-full lg:w-1/2 lg:p-8"
+          className="w-full lg:w-1/2 lg:p-8 flex justify-center items-center"
         >
-          <div className="flex items-center justify-center">
-            <img className="rounded-2xl mb-4" src={aboutImage} alt="" />
+          <div className="flex items-center justify-center font-afaced_400 ">
+            <img className="rounded-2xl mb-4 shadow-lg shadow-yellow-950" src={aboutImage} alt="" />
           </div>
         </motion.div>
 
@@ -48,7 +48,7 @@ export default function AboutHero() {
           >
             {ABOUT_TEXT.map((item, index) => (
               <p
-                className="max-w-xl lg:p-8 pb-3 text-white font-afaced_400 "
+                className="max-w-xl lg:p-8 pb-3 text-white  "
                 key={index}
                 dangerouslySetInnerHTML={{ __html: item }}
               />
@@ -57,7 +57,7 @@ export default function AboutHero() {
             {/* download the cv button */}
             <button
               type="button"
-              className="border-2 text-white bg-gradient-to-bl hover:from-blue-500 hover:to-purple-500 p-2 lg:p-3 mt-4 rounded-lg hover:text-black font-bold"
+              className="border-2 shadow-lg shadow-cyan-950 text-white bg-gradient-to-bl hover:from-blue-500 hover:to-purple-500 p-2 lg:p-3 mt-4 rounded-lg hover:text-black font-bold"
             >
               <a href={CV} download={CV.pdf}>
                 DOWNLOAD CV

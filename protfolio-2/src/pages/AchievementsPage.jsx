@@ -1,4 +1,8 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import { motion } from "framer-motion";
+import PageroWin from "../components/achievements/PageroWin";
+import Contact from "../components/Contact";
 
 export default function AchievementsPage() {
   return (
@@ -9,10 +13,15 @@ export default function AchievementsPage() {
 
       <div className="container mx-auto px-8">
         <Navbar />
-
-        <AboutHero />
-        <AboutSchool />
-        <AboutUni />
+        <motion.h2
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 0.5 }}
+          className=" text-center text-4xl md:text-6xl border-b border-neutral-700 pb-4"
+        >
+          My <span className="text-cyan-500">Achievements</span>
+        </motion.h2>
+        <PageroWin />
         <Contact />
       </div>
     </div>

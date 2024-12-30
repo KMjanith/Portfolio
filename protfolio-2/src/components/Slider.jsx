@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
-import hG1 from "../assets/about/hitGround1.jpeg";
-import hG2 from "../assets/about/hitGround2.jpeg";
-import hG3 from "../assets/about/hitGround3.jpeg";
 
-const images = [hG1, hG2, hG3];
-
-export default function Slider() {
+export default function Slider({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Auto-slide logic
@@ -17,7 +12,7 @@ export default function Slider() {
     }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval); // Cleanup interval
-  }, []);
+  }, [images.length]);
 
   // Function to handle indicator clicks
   const handleIndicatorClick = (index) => {
@@ -34,7 +29,7 @@ export default function Slider() {
           <div key={index} className="w-full flex-shrink-0">
             <img
               src={img}
-              className="block w-full"
+              className="block w-full rounded-lg"
               alt={`Slide ${index + 1}`}
             />
           </div>

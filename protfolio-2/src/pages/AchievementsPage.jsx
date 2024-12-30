@@ -6,6 +6,7 @@ import Contact from "../components/Contact";
 import Certificates from "../components/achievements/Certificates";
 import TalkToether from "../components/achievements/TalkToether";
 import Badges from "../components/achievements/Badges";
+import Others from "../components/achievements/Others";
 
 export default function AchievementsPage() {
   return (
@@ -30,6 +31,7 @@ export default function AchievementsPage() {
         </div>
         <Certificates />
         <Badges />
+        <Others />
         <Contact />
       </div>
     </div>

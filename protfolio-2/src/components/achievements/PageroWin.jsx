@@ -5,7 +5,6 @@ import Slider from "../Slider";
 import { motion } from "framer-motion";
 import Confetti from "react-confetti";
 import { FaGithub } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
 
 export default function PageroWin() {
   const images = [profile, headset];

@@ -67,8 +67,10 @@ export default function AboutUni() {
         <div className="absolute inset-1 bg-black rounded-3xl z-0"></div>
 
         {/* Slider */}
-        <div className="relative z-10">
-          <Slider images={images} />
+        <div className="max-w-3xl">
+          <div className="relative z-10 ">
+            <Slider images={images} />
+          </div>
         </div>
       </motion.div>
     </div>

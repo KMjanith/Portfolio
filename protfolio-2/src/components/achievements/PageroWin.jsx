@@ -78,7 +78,12 @@ export default function PageroWin() {
           >
             WINNER
           </motion.h2>
-          <div className="mt-5 lg:mt-12 lg:max-w-xl text-start flex flex-col justify-center items-center">
+          <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.7, type: "tween", stiffness: 100 }}
+            className="mt-5 lg:mt-12 lg:max-w-xl text-start flex flex-col justify-center items-center"
+          >
             <p className="my-2">
               The competition was held by{" "}
               <strong>Pagero Lanka (PVT) LTD</strong> in November 2024, and it
@@ -97,10 +102,11 @@ export default function PageroWin() {
               also evaluated.
             </p>
             <div className="mt-2 p-2 lg:mt-4 lg:p-4 border border-cyan-500 rounded-lg flex justify-center items-center hover:bg-cyan-900">
-              <a href="https://github.com/KMjanith/code_serge_web_scraper"></a>
-              <FaGithub className="w-6  h-6 hover: cursor-pointer" />
+              <a href="https://github.com/KMjanith/code_serge_web_scraper">
+                <FaGithub className="w-6  h-6 hover: cursor-pointer" />
+              </a>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </div>

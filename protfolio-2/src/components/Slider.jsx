@@ -20,7 +20,7 @@ export default function Slider({ images }) {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto overflow-hidden py-4 px-6 mt-3 rounded-3xl opacity-75">
+    <div className="relative w-full max-w-4xl mx-auto overflow-hidden py-4 px-15 rounded-3xl opacity-75">
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}

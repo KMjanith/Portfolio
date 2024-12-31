@@ -58,7 +58,7 @@ export default function Hero() {
             initial={{ x: 100, opasity: 0 }}
             animate={{ x: 0, opasity: 1, rotateX: 360 }}
             transition={{ duration: 1 }}
-            className="rounded-3xl shadow-[0_0_40px_10px_rgba(5,55,120,0.5)]"
+            className="rounded-3xl shadow-[0_0_30px_30px_rgba(5,55,120,0.5)]"
             src={profilePic}
             alt=""
           />

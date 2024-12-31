@@ -27,7 +27,7 @@ export default function ProjectsPage() {
 
           {/* project content */}
 
-          <div className="flex-grow ml-2 relative z-[-2] top-6">
+          <div className="flex-grow relative z-[-2] top-6">
             <motion.h1
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: -100 }}
@@ -43,7 +43,7 @@ export default function ProjectsPage() {
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
                 src={project.image}
-                className=" rounded-lg mb-5"
+                className=" rounded-lg mb-5 md:w-1/2 md:h-1/2"
               />
               <div className="flext flex-row justify-between items-center">
                 {project.technologies.map((tech, index) => (

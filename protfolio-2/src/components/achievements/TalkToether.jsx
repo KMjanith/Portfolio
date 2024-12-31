@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import talk_together from "../../assets/projects/TalkTogether_combined.jpg";
+import talk_together from "../../assets/projects/project-4.jpg";
 import { FaGithub } from "react-icons/fa";
 
 export default function TalkToether() {

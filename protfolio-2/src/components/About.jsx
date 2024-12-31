@@ -37,7 +37,7 @@ export default function About() {
             className="flex justify-center items-center"
           >
             <p
-              className="max-w-xl lg:p-8 pb-3 font-afaced_400"
+              className="max-w-xl lg:p-8 pb-3 text-lg lg:text-xl text-neutral-400"
               dangerouslySetInnerHTML={{ __html: ABOUT_TEXT[0] }}
             />
           </motion.div>

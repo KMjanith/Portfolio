@@ -123,46 +123,6 @@ export const BLOGS = [
       "Learn how to create a responsive website layout using HTML and CSS. This tutorial covers the basics of building a mobile-friendly web page from scratch.",
     ],
   },
-  {
-    title: "Introduction to JavaScript ES6 Features",
-    date: "May 15, 2023",
-    link: "/blog/2",
-    image:
-      "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
-    description: [
-      "Discover the new features and enhancements in JavaScript ES6. This guide provides an overview of the latest updates to the ECMAScript specification.",
-    ],
-  },
-  {
-    title: "Getting Started with React Hooks",
-    date: "April 28, 2023",
-    link: "/blog/3",
-    image:
-      "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
-    description: [
-      "Learn how to use React Hooks to add state and lifecycle features to functional components. This tutorial covers the basics of working with hooks in React.",
-      "Learn how to use React Hooks to add state and lifecycle features to functional components. This tutorial covers the basics of working with hooks in React.",
-      "Learn how to use React Hooks to add state and lifecycle features to functional components. This tutorial covers the basics of working with hooks in React.",
-      {
-        subTitle: "What you'll learn:",
-        points: [
-          "How to use the useState hook to manage component state",
-          "How to use the useEffect hook to perform side effects in functional components",
-          "How to create custom hooks to reuse stateful logic across components",
-        ],
-      },
-    ],
-  },
-  {
-    title: "Building a RESTful API with Node.js and Express",
-    date: "April 10, 2023",
-    link: "/blog/4",
-    image:
-      "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
-    description: [
-      "Create a RESTful API using Node.js and Express. This step-by-step guide walks you through setting up a server, defining routes, and handling requests in Node.js",
-    ],
-  },
 ];
 
 export const EXPERIENCES = [
@@ -184,20 +144,20 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Stage Pilot Train Booking System",
     link: "/projects/1",
     image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["Flutter", "Dart", "Android Emulator", "Gradle", "MongoDB", "React"],
   },
   {
-    title: "Task Management App",
+    title: "Karate Cmpetition App",
     link: "/projects/2",
     image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    technologies: ["Flutter", "Cubit", "Dart", "Firebase", "Google Auth", "Firestore", "VS Code"],
   },
   {
     title: "Portfolio Website",

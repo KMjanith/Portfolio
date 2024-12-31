@@ -43,7 +43,7 @@ export default function Others() {
               alt={profile.name}
               className="w-40 h-40 object-contain rounded-xl shadow-md hover:shadow-lg hover:shadow-cyan-600"
             />
-            <p className="text-center mt-2 text-neutral-400 font-medium text-xl">
+            <p className="text-center mt-2 text-neutral-400 font-medium text-lg">
               {profile.name}
             </p>
           </motion.a>

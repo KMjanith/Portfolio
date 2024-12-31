@@ -1,20 +1,34 @@
 import React, { useState } from "react";
 import logo from "../assets/kavindujanithLogoCroped.png";
 import { Link, NavLink } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { SiHackerrank, SiLeetcode } from "react-icons/si";
 
 function Navlinks() {
   return (
     <>
-      <NavLink to="/about" className="text-lg font-sans font-semibold">
+      <NavLink
+        to="/about"
+        className="text-lg font-thin hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+      >
         About
       </NavLink>
-      <NavLink to="/projects/1" className="text-lg font-sans font-semibold">
+      <NavLink
+        to="/projects/1"
+        className="text-lg font-thin hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+      >
         Projects
       </NavLink>
-      <NavLink to="/blog/1" className="text-lg font-sans font-semibold">
+      <NavLink
+        to="/blog/1"
+        className="text-lg font-thin hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+      >
         Blog
       </NavLink>
-      <NavLink to="/achievements" className="text-lg font-sans font-semibold">
+      <NavLink
+        to="/achievements"
+        className="text-lg font-thin hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+      >
         Achevements
       </NavLink>
     </>
@@ -38,6 +52,24 @@ export default function Navbar() {
         <Navlinks />
       </div>
 
+      <div className="hidden md:flex justify-center gap-4 mt-4 ">
+        <a href="https://github.com/KMjanith">
+          <FaGithub className="w-6  h-6 hover: cursor-pointer" />
+        </a>
+        <a href="linkedin.com/in/kavindu-janith-a76bb1291">
+          <FaLinkedin className="w-6  h-6 hover: cursor-pointer" />
+        </a>
+        <a href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud">
+          <FaYoutube className="w-6  h-6 hover: cursor-pointer" />
+        </a>
+        <a href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud">
+          <SiLeetcode className="w-6  h-6 hover: cursor-pointer" />
+        </a>
+        <a href="https://www.hackerrank.com/profile/200236G_CSE_20">
+          <SiHackerrank className="w-6  h-6 hover: cursor-pointer" />
+        </a>
+      </div>
+
       <button
         className="flex flex-col items-center justify-center space-y-1 md:hidden"
         onClick={handleNavBar}
@@ -50,6 +82,23 @@ export default function Navbar() {
       {isOpen && (
         <div className="flex flex-col items-center justify-between gap-2 w-full">
           <Navlinks />
+          <div className="flex justify-center gap-4 mt-4 ">
+            <a href="https://github.com/KMjanith">
+              <FaGithub className="w-6  h-6 hover: cursor-pointer" />
+            </a>
+            <a href="linkedin.com/in/kavindu-janith-a76bb1291">
+              <FaLinkedin className="w-6  h-6 hover: cursor-pointer" />
+            </a>
+            <a href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud">
+              <FaYoutube className="w-6  h-6 hover: cursor-pointer" />
+            </a>
+            <a href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud">
+              <SiLeetcode className="w-6  h-6 hover: cursor-pointer" />
+            </a>
+            <a href="https://www.hackerrank.com/profile/200236G_CSE_20">
+              <SiHackerrank className="w-6  h-6 hover: cursor-pointer" />
+            </a>
+          </div>
         </div>
       )}
     </nav>

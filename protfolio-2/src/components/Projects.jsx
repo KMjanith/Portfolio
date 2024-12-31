@@ -20,9 +20,9 @@ export default function Projects() {
         {PROJECTS.map((project, index) => (
           <div
             key={index}
-            className="mb-8 flex flex-wrap border p-5 rounded-2xl border-neutral-500  lg:justify-center"
+            className="mb-8 flex flex-wrap md:gap-12 border-l border-r p-5 rounded-2xl border-neutral-600  lg:justify-center shadow-md shadow-cyan-900"
           >
-            <div className="w-full lg:w-1/4 flex justify-center items-center">
+            <div className="w-full lg:w-1/4 flex justify-between items-center">
               <motion.img
                 whileInView={{ rotate: 360 }}
                 initial={{ opacity: 1, x: 0 }}
@@ -31,7 +31,7 @@ export default function Projects() {
                 width={180}
                 height={180}
                 alt={project.title}
-                className="mb-4 rounded"
+                className="mb-4 rounded md:w-full md:h-full"
               ></motion.img>
             </div>
 
@@ -40,7 +40,7 @@ export default function Projects() {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 0.5 }}
-                className="mb-4 font-semibold"
+                className="mb-4 font-semibold md:text-xl"
               >
                 {project.title}
               </motion.h3>
@@ -63,8 +63,7 @@ export default function Projects() {
                       delay: index / 10,
                     }}
                     key={index}
-                    className="mr-2 rounded 
-                   bg-neutral-700 px-2 py-1 text-sm font-medium text-purple-300"
+                    className="mr-2 rounded bg-neutral-700 px-2 py-1  text-sm font-medium text-purple-300"
                   >
                     {tech}
                   </motion.span>

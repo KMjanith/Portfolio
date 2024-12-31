@@ -39,7 +39,7 @@ export default function Badges() {
         </a>
       </motion.div>
       <a
-        className="flex justify-center items-center mt-2 lg:mt-5 flex-col"
+        className="flex justify-center items-center mt-2 lg:mt-5 flex-col hover:scale-105 transition-transform duration-300"
         href={MICROSOFT}
         target="_blank"
         rel="noreferrer"
@@ -94,7 +94,7 @@ export default function Badges() {
         </a>
       </motion.div>
       <a
-        className="flex justify-center items-center mt-3 lg:mt-5 flex-col"
+        className="flex justify-center items-center mt-3 lg:mt-5 flex-col hover:scale-105 transition-transform duration-300"
         href={GOOGLE}
         target="_blank"
         rel="noreferrer"

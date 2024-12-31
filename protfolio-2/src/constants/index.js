@@ -148,7 +148,8 @@ export const PROJECTS = [
     link: "/projects/1",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+      `A Fully user friendlt train ticket booking system in sri Lankan railways. This app provides errorless train selection 
+      capabilities, payment method integration, `,
     technologies: ["Flutter", "Dart", "Android Emulator", "Gradle", "MongoDB", "React"],
   },
   {

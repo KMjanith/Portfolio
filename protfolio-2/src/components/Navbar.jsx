@@ -9,25 +9,25 @@ function Navlinks() {
     <>
       <NavLink
         to="/about"
-        className="text-lg font-thin hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+        className="text-lg font-extralight hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
       >
         About
       </NavLink>
       <NavLink
         to="/projects/1"
-        className="text-lg font-thin hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+        className="text-lg font-extralight hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
       >
         Projects
       </NavLink>
       <NavLink
         to="/blog/1"
-        className="text-lg font-thin hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+        className="text-lg font-extralight hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
       >
         Blog
       </NavLink>
       <NavLink
         to="/achievements"
-        className="text-lg font-thin hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+        className="text-lg font-extralight hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
       >
         Achevements
       </NavLink>

@@ -31,7 +31,7 @@ export default function Projects() {
                 width={180}
                 height={180}
                 alt={project.title}
-                className="mb-4 rounded md:w-full md:h-full"
+                className="mb-4 rounded-xl md:w-full md:h-full"
               ></motion.img>
             </div>
 

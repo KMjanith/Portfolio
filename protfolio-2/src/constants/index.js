@@ -137,14 +137,14 @@ export const EXPERIENCES = [
     role: "Trainee Software Engineer",
     company: "Pagero Lanka (Pvt) Ltd",
     description: `Developed and mainatained new features and Dev ps best practices in microservices environment engaging with foreign developers. Worked with technologies like Java, Spring Boot, Scala,Docker, Kubernetes, and GCP.`,
-    technologies: ["Java", "Spring Boot", "Scala", "Docker", "Kubernetes"],
+    technologies: ["Java", "Spring Boot", "Scala", "Docker", "Kubernetes","GOCD", "Linux"],
   },
   {
     year: "Present",
     role: "Mobile App Developer",
     company: "Self",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    description: `Developed and maintained mobile applications for personal projects. Worked with technologies like Flutter, Dart, Firebase, and Firestore.`,
+    technologies: ["Flutter", "Cubit", "Dart", "Firebase", "Firestore"],
   },
 ];
 

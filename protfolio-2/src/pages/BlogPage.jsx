@@ -6,7 +6,6 @@ import Sidebar from "../components/Sidebar";
 import Contact from "../components/Contact";
 import { motion } from "framer-motion";
 
-
 export default function BlogPage() {
   const { id } = useParams();
   const blog = BLOGS.find((blog) => blog.link === `/blog/${id}`);
@@ -28,35 +27,20 @@ export default function BlogPage() {
               {blog.title}
               <h2 className="text-lg mb-4">{blog.date}</h2>
             </h1>
-            
+
             <div className="flex flex-col justify-center items-center flex-nowrap">
-            <motion.img
+              <motion.img
                 whileInView={{ rotate: 360, opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
                 src={blog.image}
-                className=" rounded-lg mb-5 md:w-1/2 md:h-1/2"
+                className=" rounded-lg mb-5 md:w-3/5 md:h-3/5"
               />
-              {blog.description.map((item, index) =>
-                typeof item === "string" ? (
-                  <p key={index} className=" text-lg mt-6 w-3/4">
-                    {item}
-                  </p>
-                ) : (
-                  <div>
-                    <h2 className="text-2xl font-semibold my-4 text-start">
-                      {item.subTitle}
-                    </h2>
-                    {item.points.map((subItem, subIndex) => (
-                      <p key={subIndex} className=" text-lg mt-6">
-                        {subItem}
-                      </p>
-                    ))}
-                  </div>
-                )
-              )}
             </div>
           </div>
+        </div>
+        <div className="flex flex-col justify-center items-center flex-nowrap md:ml-24">
+          {React.createElement(blog.description)}
         </div>
       </div>
       <Contact />

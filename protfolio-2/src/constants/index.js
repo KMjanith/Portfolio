@@ -10,10 +10,12 @@ import competitonApp from "../components/projects/CompetitonApp";
 import Portfolio from "../components/projects/Portfolio";
 import TalkTogether from "../components/projects/TalkTogetherProject";
 import StagePilot from "../components/projects/StagePilot";
+import MonoVSMicro from "../components/blogs/MonoVSMicro";
+import TypesProgLang from "../components/blogs/TypesProgLang";
 
 
 export const HERO_CONTENT = `Interested in <strong>Scalable Systems</strong>, <strong>Microservices</strong>,<strong>Fullstack mobile and web app development</strong> and <strong>DevOps</strong>
-Committed to crafting <strong>innovative</strong>, <strong>efficient</strong>, and <strong>user-focused</strong> solutions.`
+Committed to crafting <strong>innovative</strong>, <strong>efficient</strong>, and <strong>user-focused</strong> solutions.`;
 
 export const ABOUT_TEXT = [
   "I am a passionate and dedicated software engineering undergraduate with a strong interest in creating innovative solutions for real-world problems. My expertise spans <strong>building systems, web applications, and mobile applications, with a focus on microservices architecture, distributed systems,</strong> and <strong>DevOps practices.</strong>",
@@ -118,33 +120,48 @@ export const ACHIEVEMENTS = [
   },
 ];
 
-export const BLOGS = [
-  {
-    title: "Monolithic vs. Microservices: A Comparison from an Engineering Perspective",
-    date: "June 1, 2023",
-    link: "/blog/1",
-    image:
-      "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
-    description: [
-      "Learn how to create a responsive website layout using HTML and CSS. This tutorial covers the basics of building a mobile-friendly web page from scratch.",
-    ],
-  },
-];
-
 export const EXPERIENCES = [
   {
     year: "2022 - 2023 (6 months)",
     role: "Trainee Software Engineer",
     company: "Pagero Lanka (Pvt) Ltd",
     description: `Developed and mainatained new features and Dev ps best practices in microservices environment engaging with foreign developers. Worked with technologies like Java, Spring Boot, Scala,Docker, Kubernetes, and GCP.`,
-    technologies: ["Java", "Spring Boot", "Scala", "Docker", "Kubernetes","GOCD", "Linux"],
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "Scala",
+      "Docker",
+      "Kubernetes",
+      "GOCD",
+      "Linux",
+    ],
   },
   {
     year: "Present",
     role: "Mobile App Developer",
     company: "Self",
-    description: `Developed and maintained mobile applications for personal projects. Worked with technologies like Flutter, Dart, Firebase, and Firestore.`,
+    description: `Developing and maintained mobile applications for personal projects. Worked with technologies like Flutter, Dart, Firebase, and Firestore.`,
     technologies: ["Flutter", "Cubit", "Dart", "Firebase", "Firestore"],
+  },
+];
+
+export const BLOGS = [
+  {
+    title:
+      "Monolithic vs. Microservices: A Comparison from an Engineering Perspective",
+    date: "June 1, 2023",
+    link: "/blog/1",
+    image:
+      "https://miro.medium.com/v2/resize:fit:2000/1*xu1Ge_Cew0DHdSU6ETcpLQ.png",
+    description: MonoVSMicro,
+  },
+  {
+    title: "Understanding Types of Programming Languages: A Quick Guide",
+    date: "Dec 17, 2023",
+    link: "/blog/2",
+    image:
+      "https://theprimeview.com/wp-content/uploads/2024/02/Mixed-languages.jpg",
+    description: TypesProgLang,
   },
 ];
 

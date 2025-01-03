@@ -1,6 +1,5 @@
 import React from "react";
 import { FaFlutter, FaJenkins, FaDartLang, FaGithub } from "react-icons/fa6";
-import { DiMongodb } from "react-icons/di";
 import { VscVscode } from "react-icons/vsc";
 import { IoLogoAndroid } from "react-icons/io";
 import { IoLogoFirebase } from "react-icons/io5";

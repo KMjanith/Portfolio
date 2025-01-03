@@ -6,21 +6,28 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { FaFlutter, FaGolang } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { GrDocker } from "react-icons/gr";
-
+import { SiKubernetes, SiDart } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiGooglecloud } from "react-icons/si";
 
 export default function Technologies() {
-  const iconVariants = (duration) => ({
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: {
-        duration: duration,
-        ease: "linear",
-        repeat: Infinity,
-        repeatType: "reverse",
-      },
-    },
-  });
+  // Array of technology data
+  const techData = [
+    { icon: RiReactjsLine, color: "text-cyan-400", duration: 1.5 },
+    { icon: DiScala, color: "text-red-400", duration: 1 },
+    { icon: SiMongodb, color: "text-green-400", duration: 2.5 },
+    { icon: GrDocker, color: "text-blue-400", duration: 2 },
+    { icon: FaGolang, color: "text-cyan-400", duration: 2.5 },
+    { icon: BiLogoPostgresql, color: "text-blue-500", duration: 1.5 },
+    { icon: DiPython, color: "text-yellow-500", duration: 1.5 },
+    { icon: FaFlutter, color: "text-cyan-500", duration: 1.5 },
+    { icon: SiKubernetes, color: "text-cyan-500", duration: 1.5 },
+    { icon: FaJava, color: "text-red-500", duration: 1.5 },
+    { icon: SiDart, color: "text-blue-500", duration: 1.5 },
+    { icon: IoLogoFirebase, color: "text-yellow-500", duration: 1.5 },
+    { icon: SiGooglecloud, color: "text-blue-500", duration: 1.5 },
+  ];
 
   return (
     <div className="border-b border-neutral-700 pb-24">
@@ -37,71 +44,41 @@ export default function Technologies() {
         transition={{ duration: 0.5 }}
         className="flex flex-wrap justify-center items-center gap-4"
       >
-        <motion.div
-          variants={iconVariants(1.5)}
-          initial="initial"
-          animate="animate"
-          className="border-4 border-neutral-500 rounded-2xl p-4"
-        >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(1)}
-          initial="initial"
-          animate="animate"
-          className="border-4 border-neutral-500 rounded-2xl p-4"
-        >
-          <DiScala className="text-7xl text-red-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="border-4 border-neutral-500 rounded-2xl p-4"
-        >
-          <SiMongodb className="text-7xl text-green-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="border-4 border-neutral-500 rounded-2xl p-4"
-        >
-          <GrDocker className="text-7xl text-blue-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="border-4 border-neutral-500 rounded-2xl p-4"
-        >
-          <FaGolang className="text-7xl text-cyan-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(1.5)}
-          initial="initial"
-          animate="animate"
-          className="border-4 border-neutral-500 rounded-2xl p-4"
-        >
-          <BiLogoPostgresql className="text-7xl text-blue-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(1.5)}
-          initial="initial"
-          animate="animate"
-          className="border-4 border-neutral-500 rounded-2xl p-4"
-        >
-          <DiPython className="text-7xl text-yellow-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(1.5)}
-          initial="initial"
-          animate="animate"
-          className="border-4 border-neutral-500 rounded-2xl p-4"
-        >
-          <FaFlutter className="text-7xl text-cyan-500" />
-        </motion.div>
+        {techData.map((tech, index) => (
+          <IconDiv
+            key={index}
+            icon={tech.icon}
+            color={tech.color}
+            duration={tech.duration}
+          />
+        ))}
       </motion.div>
     </div>
+  );
+}
+
+function IconDiv({ icon, color, duration }) {
+  const iconVariants = (duration) => ({
+    initial: { y: -10 },
+    animate: {
+      y: [10, -10],
+      transition: {
+        duration: duration,
+        ease: "linear",
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    },
+  });
+
+  return (
+    <motion.div
+      variants={iconVariants(duration)}
+      initial="initial"
+      animate="animate"
+      className={`border-4 border-neutral-500 rounded-2xl p-4`}
+    >
+      {React.createElement(icon, { className: `text-7xl ${color}` })}
+    </motion.div>
   );
 }

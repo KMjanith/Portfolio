@@ -120,7 +120,7 @@ export const ACHIEVEMENTS = [
 
 export const BLOGS = [
   {
-    title: "How to Build a Responsive Website Using HTML and CSS",
+    title: "Monolithic vs. Microservices: A Comparison from an Engineering Perspective",
     date: "June 1, 2023",
     link: "/blog/1",
     image:

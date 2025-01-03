@@ -56,13 +56,25 @@ export default function Navbar() {
       </div>
 
       <div className="hidden md:flex justify-center gap-4 mt-4 mb-2">
-        <a href="https://github.com/KMjanith">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/KMjanith"
+        >
           <FaGithub className="w-6 h-6 hover:cursor-pointer" />
         </a>
-        <a href="https://linkedin.com/in/kavindu-janith-a76bb1291">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://linkedin.com/in/kavindu-janith-a76bb1291"
+        >
           <FaLinkedin className="w-6 h-6 hover:cursor-pointer" />
         </a>
-        <a href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud"
+        >
           <FaYoutube className="w-6 h-6 hover:cursor-pointer" />
         </a>
       </div>

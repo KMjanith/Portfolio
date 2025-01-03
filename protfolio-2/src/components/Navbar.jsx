@@ -9,27 +9,27 @@ function Navlinks() {
     <>
       <NavLink
         to="/about"
-        className="text-lg font-extralight hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+        className="text-lg lg:text-xl font-extralight hover:scale-110 hover:bg-cyan-950 rounded-lg px-2  "
       >
         About
       </NavLink>
       <NavLink
         to="/projects/1"
-        className="text-lg font-extralight hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+        className="text-lg lg:text-lg font-extralight hover:scale-110 hover:bg-cyan-950 rounded-lg px-2 "
       >
         Projects
       </NavLink>
       <NavLink
         to="/blog/1"
-        className="text-lg font-extralight hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+        className="text-lg lg:text-xl font-extralight hover:scale-110 hover:bg-cyan-950 rounded-lg px-2 "
       >
         Blog
       </NavLink>
       <NavLink
         to="/achievements"
-        className="text-lg font-extralight hover:scale-110 hover:bg-cyan-950 p-1 rounded-lg px-2"
+        className="text-lg lg:text-xl font-extralight hover:scale-110 hover:bg-cyan-950 rounded-lg px-2"
       >
-        Achevements
+        Achievements
       </NavLink>
     </>
   );
@@ -43,30 +43,27 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-between flex-wrap  pt-7 pb-7 px-4 mr-3">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-slate-900 to-slate-950 text-white 
+    shadow-md flex items-center justify-between pt-3 pb-3 md:py-0 flex-wrap px-5 md:px-10 rounded-b-xl "
+    >
       <Link to="/" className="flex flex-shrink-0 items-center">
-        <img src={logo} alt="" className=" w-12" />
+        <img src={logo} alt="Logo" className="w-12" />
       </Link>
 
-      <div className="hidden m-8 md:flex items-center justify-between gap-4 text-2xl  ">
+      <div className="hidden m-8 md:flex items-center justify-between gap-4 text-2xl">
         <Navlinks />
       </div>
 
-      <div className="hidden md:flex justify-center gap-4 mt-4 ">
+      <div className="hidden md:flex justify-center gap-4 mt-4 mb-2">
         <a href="https://github.com/KMjanith">
-          <FaGithub className="w-6  h-6 hover: cursor-pointer" />
+          <FaGithub className="w-6 h-6 hover:cursor-pointer" />
         </a>
-        <a href="linkedin.com/in/kavindu-janith-a76bb1291">
-          <FaLinkedin className="w-6  h-6 hover: cursor-pointer" />
-        </a>
-        <a href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud">
-          <FaYoutube className="w-6  h-6 hover: cursor-pointer" />
+        <a href="https://linkedin.com/in/kavindu-janith-a76bb1291">
+          <FaLinkedin className="w-6 h-6 hover:cursor-pointer" />
         </a>
         <a href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud">
-          <SiLeetcode className="w-6  h-6 hover: cursor-pointer" />
-        </a>
-        <a href="https://www.hackerrank.com/profile/200236G_CSE_20">
-          <SiHackerrank className="w-6  h-6 hover: cursor-pointer" />
+          <FaYoutube className="w-6 h-6 hover:cursor-pointer" />
         </a>
       </div>
 
@@ -80,23 +77,17 @@ export default function Navbar() {
       </button>
 
       {isOpen && (
-        <div className="flex flex-col items-center justify-between gap-2 w-full">
+        <div className="flex flex-col items-center justify-between gap-2 w-full pb-2">
           <Navlinks />
-          <div className="flex justify-center gap-4 mt-4 ">
+          <div className="flex justify-center gap-4 mt-4">
             <a href="https://github.com/KMjanith">
-              <FaGithub className="w-6  h-6 hover: cursor-pointer" />
+              <FaGithub className="w-6 h-6 hover:cursor-pointer" />
             </a>
-            <a href="linkedin.com/in/kavindu-janith-a76bb1291">
-              <FaLinkedin className="w-6  h-6 hover: cursor-pointer" />
-            </a>
-            <a href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud">
-              <FaYoutube className="w-6  h-6 hover: cursor-pointer" />
+            <a href="https://linkedin.com/in/kavindu-janith-a76bb1291">
+              <FaLinkedin className="w-6 h-6 hover:cursor-pointer" />
             </a>
             <a href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud">
-              <SiLeetcode className="w-6  h-6 hover: cursor-pointer" />
-            </a>
-            <a href="https://www.hackerrank.com/profile/200236G_CSE_20">
-              <SiHackerrank className="w-6  h-6 hover: cursor-pointer" />
+              <FaYoutube className="w-6 h-6 hover:cursor-pointer" />
             </a>
           </div>
         </div>

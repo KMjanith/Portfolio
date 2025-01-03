@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar";
 import { useParams } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import Contact from "../components/Contact";
+import { motion } from "framer-motion";
+
 
 export default function BlogPage() {
   const { id } = useParams();
@@ -14,7 +16,7 @@ export default function BlogPage() {
       <div className="fixed top-0 -z-10 h-full w-full">
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       </div>
-      <div className="container mx-auto px-8 border-b pb-20 border-neutral-600 ">
+      <div className="container mx-auto px-8 border-b pb-20 border-neutral-600 mt-24">
         <Navbar />
 
         <div className="flex h-full justify-between items-center">
@@ -24,13 +26,20 @@ export default function BlogPage() {
           <div className="flex-grow ml-2 relative z-[-2] top-6">
             <h1 className="text-3xl md:text-5xl text-center my-4 py-6">
               {blog.title}
+              <h2 className="text-lg mb-4">{blog.date}</h2>
             </h1>
-            <h2 className="text-lg mb-4">{blog.date}</h2>
+            
             <div className="flex flex-col justify-center items-center flex-nowrap">
-              <img src={blog.image} className=" items-center rounded-lg" />
+            <motion.img
+                whileInView={{ rotate: 360, opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 0.5 }}
+                src={blog.image}
+                className=" rounded-lg mb-5 md:w-1/2 md:h-1/2"
+              />
               {blog.description.map((item, index) =>
                 typeof item === "string" ? (
-                  <p key={index} className="mt-6">
+                  <p key={index} className=" text-lg mt-6 w-3/4">
                     {item}
                   </p>
                 ) : (
@@ -39,7 +48,7 @@ export default function BlogPage() {
                       {item.subTitle}
                     </h2>
                     {item.points.map((subItem, subIndex) => (
-                      <p key={subIndex} className="mt-6">
+                      <p key={subIndex} className=" text-lg mt-6">
                         {subItem}
                       </p>
                     ))}

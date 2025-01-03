@@ -1,13 +1,19 @@
 import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
+import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import school1 from "../assets/about/bauddhaloka.png";
 import school2 from "../assets/about/nalanda_logo.png";
 import kodeCloude from "../assets/certificates/kodecloude.png";
 import courseera from "../assets/certificates/couseera.png";
+import competitonApp from "../components/projects/CompetitonApp";
+import Portfolio from "../components/projects/Portfolio";
+import TalkTogether from "../components/projects/TalkTogetherProject";
+import StagePilot from "../components/projects/StagePilot";
 
-export const HERO_CONTENT = `I am a passionate software engineer with a talent for designing and developing <strong>scalable systems, web applications, and mobile solutions</strong>. Specializing in <strong>microservices, distributed systems</strong>, and <strong>DevOps</strong>, I work with modern technologies like <strong>Python, Go, Java</strong>, and <strong>Scala</strong>, alongside databases such as <strong>MySQL, PostgreSQL, Cassandra</strong>, and <strong>MongoDB</strong>. My focus is on creating innovative, efficient, and user-centric solutions that stand out.`;
+
+export const HERO_CONTENT = `Interested in <strong>Scalable Systems</strong>, <strong>Microservices</strong>,<strong>Fullstack mobile and web app development</strong> and <strong>DevOps</strong>
+Committed to crafting <strong>innovative</strong>, <strong>efficient</strong>, and <strong>user-focused</strong> solutions.`
 
 export const ABOUT_TEXT = [
   "I am a passionate and dedicated software engineering undergraduate with a strong interest in creating innovative solutions for real-world problems. My expertise spans <strong>building systems, web applications, and mobile applications, with a focus on microservices architecture, distributed systems,</strong> and <strong>DevOps practices.</strong>",
@@ -142,15 +148,68 @@ export const EXPERIENCES = [
   },
 ];
 
+export const PROJECTSPAGE = [
+  {
+    title: "Stage Pilot Train Booking System",
+    link: "/projects/1",
+    image: project1,
+    description: StagePilot,
+
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Android Emulator",
+      "Gradle",
+      "MongoDB",
+      "React",
+    ],
+  },
+  {
+    title: "Karate Cmpetition App",
+    link: "/projects/2",
+    image: project2,
+    description: competitonApp,
+    technologies: [
+      "Flutter",
+      "Cubit",
+      "Dart",
+      "Firebase",
+      "Google Auth",
+      "Firestore",
+      "VS Code",
+    ],
+  },
+  {
+    title: "Portfolio Website",
+    link: "/projects/3",
+    image: project3,
+    description: Portfolio,
+    technologies: ["HTML", "CSS", "React", "tailwindcss", "vite"],
+  },
+  {
+    title: "Talk together",
+    link: "/projects/4",
+    image: project4,
+    description: TalkTogether,
+    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+  },
+];
+
 export const PROJECTS = [
   {
     title: "Stage Pilot Train Booking System",
     link: "/projects/1",
     image: project1,
-    description:
-      `A Fully user friendlt train ticket booking system in sri Lankan railways. This app provides errorless train selection 
+    description: `A Fully user friendlt train ticket booking system in sri Lankan railways. This app provides errorless train selection 
       capabilities, payment method integration, `,
-    technologies: ["Flutter", "Dart", "Android Emulator", "Gradle", "MongoDB", "React"],
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Android Emulator",
+      "Gradle",
+      "MongoDB",
+      "React",
+    ],
   },
   {
     title: "Karate Cmpetition App",
@@ -158,7 +217,15 @@ export const PROJECTS = [
     image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["Flutter", "Cubit", "Dart", "Firebase", "Google Auth", "Firestore", "VS Code"],
+    technologies: [
+      "Flutter",
+      "Cubit",
+      "Dart",
+      "Firebase",
+      "Google Auth",
+      "Firestore",
+      "VS Code",
+    ],
   },
   {
     title: "Portfolio Website",
@@ -169,7 +236,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React", "tailwindcss", "vite"],
   },
   {
-    title: "Blogging Platform",
+    title: "Talk Together",
     link: "/projects/4",
     image: project4,
     description:
@@ -199,10 +266,8 @@ export const CERTIFICATES = [
     url: "https://www.coursera.org/account/accomplishments/verify/P38LC3TVWM36",
     heading: "Application Development using Microservices and Serverless",
     date: "December 17, 2024",
-    description:
-      `Got a better Hands on Experiance about deploying microservice in 
+    description: `Got a better Hands on Experiance about deploying microservice in 
       IBM cloude code engine and serverless in IBM cloude function. Also got a better understading 
       about microservices architecture, error handeling and ibmcloude CLI. `,
   },
 ];
-

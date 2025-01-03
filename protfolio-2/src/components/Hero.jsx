@@ -21,12 +21,14 @@ export default function Hero() {
       <div className="flex flex-wrap lg:flex-nowrap  justify-between items-center">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col item-center lg:items-start">
+          <p className="text-xl ml-1 font-thin py-1 flex-1 max-w-20 bg-neutral-700 rounded-xl px-2">Hi I am</p>
             <motion.h1
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-14 text-7xl font-thin tracking-tight lg:text-7xl "
+              className="pb-10 text-7xl font-afaced tracking-tight lg:text-7xl "
             >
+            
               Kavindu Janith
             </motion.h1>
             <motion.span

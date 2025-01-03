@@ -13,34 +13,35 @@ export default function Projects() {
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-4xl"
       >
-        Projects
+        <span className="text-cyan-600">P</span>rojec<span className="text-cyan-600">ts</span>
       </motion.h2>
 
       <div>
         {PROJECTS.map((project, index) => (
-          <div
+          <Link
+            to={project.link}
             key={index}
-            className="mb-8 flex flex-wrap md:gap-12 border-l border-r p-5 rounded-2xl border-neutral-600  lg:justify-center shadow-md shadow-cyan-900"
+            className="mb-8 flex flex-col md:flex-row flex-wrap md:gap-12 border-l border-r p-5 rounded-2xl border-neutral-600 lg:justify-center shadow-md shadow-cyan-900 hover:scale-110 transition-transform duration-300"
           >
+            {/* Image Section */}
             <div className="w-full lg:w-1/4 flex justify-between items-center">
               <motion.img
                 whileInView={{ rotate: 360 }}
                 initial={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.5 }}
                 src={project.image}
-                width={180}
-                height={180}
                 alt={project.title}
-                className="mb-4 rounded-xl md:w-full md:h-full"
-              ></motion.img>
+                className="mb-4 rounded-xl w-full h-auto object-cover md:ml-10"
+              />
             </div>
 
-            <div className="w-full max-auto lg:w-1/2 flex justify-center items-center flex-col">
+            {/* Content Section */}
+            <div className="w-full mx-auto lg:w-1/2 flex justify-center items-center flex-col">
               <motion.h3
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 0.5 }}
-                className="mb-4 font-semibold md:text-xl"
+                className="mb-4 font-semibold text-lg md:text-2xl"
               >
                 {project.title}
               </motion.h3>
@@ -48,40 +49,41 @@ export default function Projects() {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="mb-4 text-neutral-400 "
+                className="mb-4 text-neutral-400 md:text-lg"
               >
                 {project.description}
               </motion.p>
 
-              <div className="flex flex-wrap gap-2">
-                {project.technologies.map((tech, index) => (
+              {/* Technologies */}
+              <div className="flex flex-wrap gap-2 justify-center items-center">
+                {project.technologies.map((tech, techIndex) => (
                   <motion.span
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 100 }}
                     transition={{
                       duration: 0.5,
-                      delay: index / 10,
+                      delay: techIndex / 10,
                     }}
-                    key={index}
-                    className="mr-2 rounded bg-neutral-700 px-2 py-1  text-sm font-medium text-purple-300"
+                    key={techIndex}
+                    className="mr-2 rounded bg-neutral-700 px-2 py-1 text-sm font-medium text-purple-300"
                   >
                     {tech}
                   </motion.span>
                 ))}
               </div>
 
+              {/* Link to Project */}
               <motion.div
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 1, x: 100 }}
                 transition={{ duration: 0.5 }}
-                className="text-xl text-blue-300  mt-4  w-full flex "
+                className="text-xl text-blue-300 mt-4 w-full flex justify-center items-center"
               >
                 <motion.div
                   whileInView={{ rotate: 360, x: 0 }}
                   initial={{ opacity: 1, x: 100 }}
                   transition={{ duration: 0.5 }}
-                  className="bg-neutral-700 p-2 rounded-xl hover:bg-neutral-600 cursor-pointer"
-                  href="#"
+                  className="p-2 rounded-xl hover:bg-neutral-600 cursor-pointer"
                 >
                   <Link to={project.link}>
                     <FaExternalLinkAlt />
@@ -89,7 +91,7 @@ export default function Projects() {
                 </motion.div>
               </motion.div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

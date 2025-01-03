@@ -31,14 +31,15 @@ export default function Certificates() {
 
 function CertificatesCompoent({ image, url, heading, date, description }) {
   return (
-    <div className="flex flex-col lg:flex-row justify-center gap-4 items-center border-l border-r border-neutral-700 shadow-lg shadow-purple-950 rounded-2xl p-5 mt-5">
+    <div className="flex flex-col lg:flex-row justify-center gap-4 items-center
+     border-l border-r border-neutral-700 shadow-lg shadow-purple-950 rounded-2xl p-5 mt-5 hover:scale-105 transition-transform duration-300">
       {/* Fixed Minimum and Maximum Width */}
-      <div className="mb-5 flex-shrink-0 min-w-[12rem] max-w-[12rem]">
+      <div className="mb-5 flex-shrink-0 md:min-w-[12rem] md:max-w-[17rem] ">
         <motion.img
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="rounded-lg w-full h-auto"
+          className="rounded-lg w-auto h-auto object-cover"
           src={image}
           alt="Certificate"
         />

@@ -30,7 +30,7 @@ export default function BlogPage() {
 
             <div className="flex flex-col justify-center items-center flex-nowrap">
               <motion.img
-                whileInView={{ rotate: 360, opacity: 1, y: 0 }}
+                whileInView={{  opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
                 src={blog.image}

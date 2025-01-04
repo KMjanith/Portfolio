@@ -41,29 +41,12 @@ export default function ProjectsPage() {
 
             <div className="flex flex-col items-center flex-nowrap">
               <motion.img
-                whileInView={{ rotate: 360, opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
                 src={project.image}
                 className=" rounded-lg mb-5 md:w-1/2 md:h-1/2"
               />
-              {/* <div className="flext flex-row justify-between items-center">
-                {project.technologies.map((tech, index) => (
-                  <motion.span
-                    whileInView={{ opacity: 1, x: 0 }}
-                    initial={{ opacity: 0, x: 100 }}
-                    transition={{
-                      duration: 0.5,
-                      delay: index / 5,
-                    }}
-                    key={index}
-                    className="mr-2 rounded 
-                    bg-neutral-700 px-2 py-1 text-sm font-medium text-purple-300"
-                  >
-                    {tech}
-                  </motion.span>
-                ))}
-              </div> */}
             </div>
           </div>
         </div>

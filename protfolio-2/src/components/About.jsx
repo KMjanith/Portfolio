@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImage from "../assets/about/about.jpg";
-import CV from "../assets/CV.pdf";
+import CV from "../assets/kavindu_janith.pdf";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import aboutImage from "../../assets/about/aboutme.jpg";
 import { ABOUT_TEXT } from "../../constants";
-import CV from "../../assets/CV.pdf";
+import CV from "../../assets/kavindu_janith.pdf";
 
 export default function AboutHero() {
   return (

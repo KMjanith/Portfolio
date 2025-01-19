@@ -31,6 +31,12 @@ function Navlinks() {
       >
         Achievements
       </NavLink>
+      <NavLink
+        to="/experiance"
+        className="text-lg lg:text-xl font-extralight hover:scale-110 hover:bg-cyan-950 rounded-lg px-2"
+      >
+        Experiance
+      </NavLink>
     </>
   );
 }

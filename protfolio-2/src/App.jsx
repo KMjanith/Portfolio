@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 import AchievementsPage from "./pages/AchievementsPage";
+import Experiance from "./pages/ExperiancePage";
 
 export default function () {
   return (
@@ -15,6 +16,7 @@ export default function () {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog/:id" element={<BlogPage />} />
         <Route path="/achievements" element={<AchievementsPage />} />
+        <Route path="/experiance" element={<Experiance />} />
       </Routes>
     </BrowserRouter>
   );

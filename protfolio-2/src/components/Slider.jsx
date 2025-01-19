@@ -26,10 +26,10 @@ export default function Slider({ images }) {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((img, index) => (
-          <div key={index} className="w-full flex-shrink-0">
+          <div key={index} className="w-full flex-shrink-0 flex">
             <img
               src={img}
-              className="block w-full rounded-lg"
+              className="block w-full rounded-lg "
               alt={`Slide ${index + 1}`}
             />
           </div>

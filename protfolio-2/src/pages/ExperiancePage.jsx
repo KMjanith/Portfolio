@@ -23,8 +23,10 @@ export default function ExperiancePage() {
           >
             My <span className="text-cyan-500">Experiances</span>
           </motion.h2>
-          <LakeHouse />
-          <PageroIntern />
+          <div className="flex flex-col lg:gap-0 gap-4 lg:mt-3 mt-5 border-b pb-10 border-neutral-600">
+            <PageroIntern />
+            <LakeHouse />
+          </div>
           <Contact />
         </div>
       </div>

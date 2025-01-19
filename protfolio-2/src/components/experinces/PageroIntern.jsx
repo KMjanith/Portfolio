@@ -3,7 +3,6 @@ import pagero from "../../assets/internPagero/pagero.jpg";
 import i1 from "../../assets/internPagero/i1.jpg";
 import i2 from "../../assets/internPagero/i2.jpg";
 import i3 from "../../assets/internPagero/i3.jpg";
-import i4 from "../../assets/internPagero/i4.jpg";
 import i5 from "../../assets/internPagero/non-tech.jpg";
 import res1 from "../../assets/internPagero/res1.png";
 import res2 from "../../assets/internPagero/res2.png";
@@ -17,7 +16,7 @@ import res9 from "../../assets/internPagero/res9.png";
 import { motion } from "framer-motion";
 
 export default function PageroIntern() {
-  const images = [i1, i2, i3, i4];
+  const memoriesImages = [i2, i1, i3];
   const reses = [res1, res2, res3, res4, res5, res6, res7, res8, res9];
 
   return (
@@ -29,7 +28,7 @@ export default function PageroIntern() {
         <motion.img
           src={pagero}
           alt="lakehouse"
-          className="text-white w-1/2 lg:w-1/4 rounded-lg"
+          className="text-white w-full lg:w-1/4 rounded-lg"
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
@@ -44,17 +43,18 @@ export default function PageroIntern() {
           <p className="text-center lg:text-start text-2xl lg:text-3xl">
             Pagero Lanka (PVT) LTD
           </p>
-          <p className="text-neutral-400">
+          <p className="text-neutral-400 text-sm">
             No. 413 R. A. De Mel Mawatha, Colombo 3, Sri Lanka | Head office -
             Sweden
           </p>
           <p className="bg-neutral-800 mt-1  px-2 py-1 rounded-md lg:w-max text-lg">
             Job title: Software Engineering Intern
           </p>
-          <p className="text-neutral-400 mt-1">2023 December - 2024 June</p>
+          <p className="text-neutral-400 mt-1 text-sm">
+            2023 December - 2024 June
+          </p>
         </motion.div>
       </div>
-
       <div className="mt-2 flex flex-col lg:flex-row justify-center items-center gap-3 lg:gap-5 w-full ">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -105,7 +105,6 @@ export default function PageroIntern() {
           </ul>
         </motion.div>
       </div>
-
       {/*responsibilities*/}
       <div>
         {/* responsibilities */}
@@ -136,7 +135,6 @@ export default function PageroIntern() {
           ))}
         </motion.div>
       </div>
-
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -146,7 +144,6 @@ export default function PageroIntern() {
         <p className="text-2xl font-afaced mb-2 text-center"> Non Technical</p>
         <img src={i5} alt="" className="h-auto w-auto lg:w-3/4 rounded-2xl" />
       </motion.div>
-
       <motion.p
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -163,9 +160,19 @@ export default function PageroIntern() {
         transition={{ duration: 0.5 }}
         className="flex flex-col lg:flex-row justify-center items-center gap-2 my-5"
       >
-        <img src={i2} alt="" className="h-auto w-52 rounded-2xl" />
-        <img src={i1} alt="" className="h-auto w-72 rounded-2xl" />
-        <img src={i3} alt="" className="h-auto w-52 rounded-2xl" />
+        {memoriesImages.map((img, index) => (
+          <motion.img
+            key={index}
+            src={img}
+            alt={`Memory ${index + 1}`}
+            className={` ${
+              index === 1 ? "h-auto w-72" : "h-auto w-52"
+            } rounded-2xl`}
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5, delay: index * 0.01 }}
+          />
+        ))}
       </motion.div>
     </div>
   );

@@ -1,6 +1,8 @@
 import React from "react";
 import { EXPERIENCES } from "../constants";
 import { motion } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Experiance() {
   return (
@@ -65,6 +67,14 @@ export default function Experiance() {
                     {tech}
                   </motion.span>
                 ))}
+                <div className="text-xl text-blue-300  mt-4  w-full flex justify-end items-end">
+                  <Link
+                    to="/experiance"
+                    className="p-2 rounded-xl hover:bg-neutral-600 cursor-pointer"
+                  >
+                    <FaExternalLinkAlt />
+                  </Link>
+                </div>
               </div>
             </motion.div>
           </div>

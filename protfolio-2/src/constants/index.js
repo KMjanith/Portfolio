@@ -136,13 +136,7 @@ export const EXPERIENCES = [
       "Linux",
     ],
   },
-  {
-    year: "Present",
-    role: "Mobile App Developer",
-    company: "Self",
-    description: `Developing and maintained mobile applications for personal projects. Worked with technologies like Flutter, Dart, Firebase, and Firestore.`,
-    technologies: ["Flutter", "Cubit", "Dart", "Firebase", "Firestore"],
-  },
+ 
 ];
 
 export const BLOGS = [

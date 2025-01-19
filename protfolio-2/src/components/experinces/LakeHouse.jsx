@@ -13,7 +13,7 @@ export default function LakeHouse() {
         <motion.img
           src="https://upload.wikimedia.org/wikipedia/en/5/5f/Lake_house_logo.png"
           alt="lakehouse"
-          className="text-white bg-white w-1/2 lg:w-1/4 rounded-lg p-2"
+          className="text-white bg-white w-full lg:w-1/4 rounded-lg p-2"
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
@@ -28,13 +28,13 @@ export default function LakeHouse() {
           <p className="text-center text-2xl lg:text-3xl">
             Associated Newspapper of Ceylon limited (ANCL)
           </p>
-          <p className="text-neutral-400">
+          <p className="text-neutral-400 text-sm">
             D. R. Wijewardena Mawatha, Colombo 10, Sri Lanka.
           </p>
           <p className="bg-neutral-800 mt-1 px-2 py-1 rounded-md lg:w-max text-lg">
             Job title: Office Assistant ( IT department )
           </p>
-          <p className="text-neutral-400 mt-1">2020 January - 2021 August</p>
+          <p className="text-neutral-400 mt-1 text-sm">2020 January - 2021 August</p>
         </motion.div>
       </div>
 

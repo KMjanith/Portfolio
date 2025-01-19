@@ -56,7 +56,7 @@ export default function About() {
       <div className="text-xl text-blue-300  mt-4  w-full flex justify-end items-end">
         <Link
           to="about"
-          className="bg-neutral-700 p-2 rounded-xl hover:bg-neutral-600 cursor-pointer"
+          className=" p-2 rounded-xl hover:bg-neutral-600 cursor-pointer"
         >
           <FaExternalLinkAlt />
         </Link>

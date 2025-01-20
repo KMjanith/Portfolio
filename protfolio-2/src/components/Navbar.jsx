@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/kavindujanithLogoCroped.png";
 import { Link, NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
-import { SiHackerrank, SiLeetcode } from "react-icons/si";
+import { FaMedium } from "react-icons/fa6";
 
 function Navlinks() {
   return (
@@ -82,6 +82,13 @@ export default function Navbar() {
           href="https://youtube.com/@fixmath.a4349?si=BV1IlDzB56tLurud"
         >
           <FaYoutube className="w-6 h-6 hover:cursor-pointer" />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://medium.com/@kavinduj.20"
+        >
+          <FaMedium className="w-6 h-6 hover:cursor-pointer" />
         </a>
       </div>
 

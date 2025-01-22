@@ -6,13 +6,15 @@ import school1 from "../assets/about/bauddhaloka.png";
 import school2 from "../assets/about/nalanda_logo.png";
 import kodeCloude from "../assets/certificates/kodecloude.png";
 import courseera from "../assets/certificates/couseera.png";
+import hackerank_problem_solving_basic from "../assets/certificates/problem_solving_basic.png";
+import hackerank_software_engineering from "../assets/certificates/software_engineer.png";
+import hackerank_python_basic from "../assets/certificates/python_bsics.png";
 import competitonApp from "../components/projects/CompetitonApp";
 import Portfolio from "../components/projects/Portfolio";
 import TalkTogether from "../components/projects/TalkTogetherProject";
 import StagePilot from "../components/projects/StagePilot";
 import MonoVSMicro from "../components/blogs/MonoVSMicro";
 import TypesProgLang from "../components/blogs/TypesProgLang";
-
 
 export const HERO_CONTENT = `Interested in <strong>Scalable Systems</strong>, <strong>Microservices</strong>,<strong>Fullstack mobile and web app development</strong> and <strong>DevOps</strong>
 Committed to crafting <strong>innovative</strong>, <strong>efficient</strong>, and <strong>user-focused</strong> solutions.`;
@@ -136,7 +138,6 @@ export const EXPERIENCES = [
       "Linux",
     ],
   },
- 
 ];
 
 export const BLOGS = [
@@ -280,5 +281,27 @@ export const CERTIFICATES = [
     description: `Got a better Hands on Experiance about deploying microservice in 
       IBM cloude code engine and serverless in IBM cloude function. Also got a better understading 
       about microservices architecture, error handeling and ibmcloude CLI. `,
+  },
+  {
+    image: hackerank_problem_solving_basic,
+    url: "https://www.hackerrank.com/certificates/9f6e28d623d5",
+    heading: "HackeRank Problem Solving(basic)",
+    date: "January 07, 2025",
+    description: `This covered basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching). `,
+  },
+
+  {
+    image: hackerank_software_engineering,
+    url: "https://www.hackerrank.com/certificates/78132ba2a68a",
+    heading: "HackeRank Software Engineer",
+    date: "January 07, 2025",
+    description: `This covered topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes `,
+  },
+  {
+    image: hackerank_python_basic,
+    url: "https://www.hackerrank.com/certificates/iframe/2aae18091e88",
+    heading: "HackeRank Python (Basic)",
+    date: "Jannuary 15, 2025",
+    description: `This covered topics like Problem solving, SQL, and REST API. `,
   },
 ];
